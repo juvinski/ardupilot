@@ -470,6 +470,7 @@ bool AP_Arming::arm(uint8_t method)
         armed = true;
         arming_method = NONE;
         GCS_MAVLINK::send_statustext_all(MAV_SEVERITY_INFO, "Throttle armed");
+        AP_Notify::flags.vehicle_lost=false;
         return true;
     }
 
@@ -478,7 +479,7 @@ bool AP_Arming::arm(uint8_t method)
         arming_method = method;
 
         GCS_MAVLINK::send_statustext_all(MAV_SEVERITY_INFO, "Throttle armed");
-
+        AP_Notify::flags.vehicle_lost=false;
         //TODO: Log motor arming to the dataflash
         //Can't do this from this class until there is a unified logging library
 
@@ -497,7 +498,7 @@ bool AP_Arming::disarm()
         return false;
     }
     armed = false;
-
+    AP_Notify::flags.vehicle_lost=true;
     GCS_MAVLINK::send_statustext_all(MAV_SEVERITY_INFO, "Throttle disarmed");
 
     //TODO: Log motor disarming to the dataflash

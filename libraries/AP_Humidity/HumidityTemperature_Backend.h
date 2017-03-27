@@ -21,22 +21,26 @@
 #include <AP_Common/AP_Common.h>
 #include <AP_Param/AP_Param.h>
 #include <AP_Vehicle/AP_Vehicle.h>
-#include "Humidity.h"
+#include "AP_Humidity.h"
+#include "HumidityTemperature.h"
 
 class AP_HumidityTemperature_Backend
 {
 public:
     // constructor
-    AP_HumidityTemperature_Backend(HumidityTemperature &_humiditytemperature );
+    AP_HumidityTemperature_Backend(AP_HumidityTemperature &_humiditytemperature);
     
     // we declare a virtual destructor so that  drivers can
     // override with a custom destructor if need be
     virtual ~AP_HumidityTemperature_Backend(void) {}
     
     /// Startup initialisation.
-    virtual void read = 0;
+    virtual void read(void) = 0;
 
+    virtual float getTemperature(void) = 0;
+    
+    virtual float getHumidity(void) = 0;
     
 private:
-    HumidityTemperature &humitemperature;
+    AP_HumidityTemperature &humiditytemperature;
 };

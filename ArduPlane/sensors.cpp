@@ -172,3 +172,9 @@ void Plane::ice_update(void)
 {
     g2.ice_control.update();
 }
+
+void Plane::read_temperature(void)
+{
+    //hal.console->print(" READ!!!!!!!!!! \n");
+    humidity_sensor.read();
+}

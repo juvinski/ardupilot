@@ -16,14 +16,15 @@
 
 #include <AP_Common/AP_Common.h>
 #include <AP_HAL/AP_HAL.h>
+#include "HumidityTemperature.h"
 #include "HumidityTemperature_Backend.h"
 
 /*
   base class constructor. 
   This incorporates initialisation as well.
 */
-AP_HumidityTemperature_Backend::AP_HumidityTemperature_Backend(HumidityTemperature &_humiditytemperature):
-humitemperature(__humiditytemperature)
+AP_HumidityTemperature_Backend::AP_HumidityTemperature_Backend(AP_HumidityTemperature &_humiditytemperature) : 
+humiditytemperature(_humiditytemperature)
 {
     
 }

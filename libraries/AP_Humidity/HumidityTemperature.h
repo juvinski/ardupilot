@@ -21,17 +21,17 @@
 #include <AP_Math/AP_Math.h>
 #include <inttypes.h>
 #include <AP_Vehicle/AP_Vehicle.h>
+//#include "HumidityTemperature_Backend.h"
 
-class AP_Humidity_Backend; 
-class DataFlash_Class;
+class AP_HumidityTemperature_Backend; 
 
-class HumidityTemperature
+class AP_HumidityTemperature
 {
 public:
     friend class AP_HumidityTemperature_Backend;
 
-    HumidityTemperature(DataFlash_Class *dataflash);
-
+    AP_HumidityTemperature();
+    
     // initialise humidity sensor
     void init(void);
 
@@ -39,11 +39,11 @@ public:
     // Update just can be run at least 2 seconds
     void read(void);
     
-    // dataflash for logging, if available
-    DataFlash_Class *_DataFlash;
-
+    float getTemperature(void);
+    float getHumidity(void);
+    
 private:
-    AP_HumidityTemperature_Backend *drivers;
+    AP_HumidityTemperature_Backend *driver;
     float _humidity;
     float _temperature;
 };

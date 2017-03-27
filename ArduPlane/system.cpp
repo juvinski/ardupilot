@@ -203,6 +203,10 @@ void Plane::init_ardupilot()
     init_rc_in();               // sets up rc channels from radio
 
     relay.init();
+    
+    //JUVA - Humidity
+    humidity_sensor.init();
+    
 
 #if MOUNT == ENABLED
     // initialise camera mount

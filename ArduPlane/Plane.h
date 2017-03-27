@@ -91,6 +91,9 @@
 #include <AP_Button/AP_Button.h>
 #include <AP_ICEngine/AP_ICEngine.h>
 
+//Juvinski
+#include <AP_Humidity/AP_Humidity.h>
+
 #include "GCS_Mavlink.h"
 #include "quadplane.h"
 #include "tuning.h"
@@ -806,6 +809,9 @@ private:
 
     // support for transmitter tuning
     AP_Tuning_Plane tuning;
+    
+    //Juva - Humidity Sensor
+    AP_HumidityTemperature humidity_sensor;
 
     static const struct LogStructure log_structure[];
     
@@ -1111,6 +1117,9 @@ private:
     void parachute_release();
     bool parachute_manual_release();
     void accel_cal_update(void);
+    
+    //Juva - Hunidity sensor
+    void read_temperature(void);
 
     // support for AP_Avoidance custom flight mode, AVOID_ADSB
     bool avoid_adsb_init(bool ignore_checks);

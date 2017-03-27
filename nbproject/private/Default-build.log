@@ -1,0 +1,16 @@
+/usr/bin/make -C ArduPlane sitl
+make[1]: Entering directory '/home/juvinski/Projetos/ardupilot/ArduPlane'
+Checking modules
+Module modules/mavlink out of date
+* modules/mavlink 2460eb0...e08439e (1):
+  < ArduPilot: Add PID_TUNING_LANDING
+
+
+You need to run 'git submodule update'
+
+Please see http://dev.ardupilot.org/wiki/git-submodules/
+../mk/modules.mk:21: recipe for target 'CHECK_MODULES' failed
+make[1]: *** [CHECK_MODULES] Error 1
+make[1]: Leaving directory '/home/juvinski/Projetos/ardupilot/ArduPlane'
+Makefile:18: recipe for target 'plane' failed
+make: *** [plane] Error 2

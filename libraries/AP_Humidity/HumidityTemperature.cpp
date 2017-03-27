@@ -15,29 +15,39 @@
  */
 
 #include "HumidityTemperature.h"
-#include "DHT22.h"
+#include "HumidityTemperature_Backend.h"
+#include "AP_HumidityTemperature_DHT22.h"
 
 extern const AP_HAL::HAL &hal;
 
-Humidity::Humidity(DataFlash_Class *dataflash)
+AP_HumidityTemperature::AP_HumidityTemperature()
 {
-    AP_Param::setup_object_defaults(this, var_info);
-    memset(drivers,0,sizeof(drivers));
+    //memset(driver,0,sizeof(driver));
+    //driver = new AP_HumidityTemperature_DHT22(*this);
 }
-
 /*
   initialise the Humidity class. 
  */
-void Humidity::init(void)
+void AP_HumidityTemperature::init(void)
 {
-    
+    driver = new AP_HumidityTemperature_DHT22(*this);
 }
 
 /*
   update RangeFinder state for all instances. This should be called at
   around 10Hz by main loop
  */
-void Humidity::read(void)
+void AP_HumidityTemperature::read(void)
 {
+    driver->read();
+}
 
+float AP_HumidityTemperature::getHumidity(void)
+{
+    return driver->getHumidity();
+}
+
+float AP_HumidityTemperature::getTemperature() 
+{
+    return driver->getTemperature();
 }
