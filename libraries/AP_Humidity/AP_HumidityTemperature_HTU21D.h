@@ -45,4 +45,8 @@ private:
     int crc_check(const uint8_t *buf, int len);
     void readTemperature();
     void readHumidity();
+    bool _reading_temperature;
+    bool _reading_humidity;
+    bool _type = false;
+    uint32_t _next_read=0;
 };
