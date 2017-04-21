@@ -940,10 +940,12 @@ void Plane::log_picture()
         gcs_send_message(MSG_CAMERA_FEEDBACK);
         if (should_log(MASK_LOG_CAMERA)) {
             DataFlash.Log_Write_Camera(ahrs, gps, current_loc);
+            DataFlash.Log_Humidity(ahrs, gps, current_loc,humidity_sensor);
         }
     } else {
         if (should_log(MASK_LOG_CAMERA)) {
             DataFlash.Log_Write_Trigger(ahrs, gps, current_loc);
+            DataFlash.Log_Humidity(ahrs, gps, current_loc,humidity_sensor);
         }      
     }
 #endif

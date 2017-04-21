@@ -104,6 +104,9 @@
 #include "Parameters.h"
 #include "avoidance_adsb.h"
 
+//Juvinski
+#include <AP_Humidity/AP_Humidity.h>
+
 #if CONFIG_HAL_BOARD == HAL_BOARD_SITL
 #include <SITL/SITL.h>
 #endif
@@ -807,6 +810,9 @@ private:
     // support for transmitter tuning
     AP_Tuning_Plane tuning;
 
+    //Juva - Humidity Sensor
+    AP_HumidityTemperature humidity_sensor;
+    
     static const struct LogStructure log_structure[];
     
 #if CONFIG_HAL_BOARD == HAL_BOARD_PX4
@@ -1111,6 +1117,9 @@ private:
     void parachute_release();
     bool parachute_manual_release();
     void accel_cal_update(void);
+    
+    //Juva - Hunidity sensor
+    void read_temperature(void);
 
     // support for AP_Avoidance custom flight mode, AVOID_ADSB
     bool avoid_adsb_init(bool ignore_checks);

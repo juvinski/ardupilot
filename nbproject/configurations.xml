@@ -1,0 +1,3833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="AntennaTracker">
+        <in>AntennaTracker.cpp</in>
+        <in>GCS_Mavlink.cpp</in>
+        <in>Log.cpp</in>
+        <in>Parameters.cpp</in>
+        <in>capabilities.cpp</in>
+        <in>control_auto.cpp</in>
+        <in>control_manual.cpp</in>
+        <in>control_scan.cpp</in>
+        <in>control_servo_test.cpp</in>
+        <in>radio.cpp</in>
+        <in>sensors.cpp</in>
+        <in>servos.cpp</in>
+        <in>system.cpp</in>
+        <in>tracking.cpp</in>
+      </df>
+      <df name="APMrover2">
+        <in>APMrover2.cpp</in>
+        <in>GCS_Mavlink.cpp</in>
+        <in>Log.cpp</in>
+        <in>Parameters.cpp</in>
+        <in>Rover.cpp</in>
+        <in>Steering.cpp</in>
+        <in>capabilities.cpp</in>
+        <in>commands.cpp</in>
+        <in>commands_logic.cpp</in>
+        <in>commands_process.cpp</in>
+        <in>compat.cpp</in>
+        <in>control_modes.cpp</in>
+        <in>events.cpp</in>
+        <in>failsafe.cpp</in>
+        <in>navigation.cpp</in>
+        <in>radio.cpp</in>
+        <in>sensors.cpp</in>
+        <in>setup.cpp</in>
+        <in>system.cpp</in>
+        <in>test.cpp</in>
+      </df>
+      <df name="ArduCopter">
+        <in>AP_Rally.cpp</in>
+        <in>AP_State.cpp</in>
+        <in>ArduCopter.cpp</in>
+        <in>Attitude.cpp</in>
+        <in>Copter.cpp</in>
+        <in>GCS_Mavlink.cpp</in>
+        <in>Log.cpp</in>
+        <in>Parameters.cpp</in>
+        <in>UserCode.cpp</in>
+        <in>afs_copter.cpp</in>
+        <in>arming_checks.cpp</in>
+        <in>avoidance_adsb.cpp</in>
+        <in>baro_ground_effect.cpp</in>
+        <in>capabilities.cpp</in>
+        <in>commands.cpp</in>
+        <in>commands_logic.cpp</in>
+        <in>compassmot.cpp</in>
+        <in>compat.cpp</in>
+        <in>control_acro.cpp</in>
+        <in>control_althold.cpp</in>
+        <in>control_auto.cpp</in>
+        <in>control_autotune.cpp</in>
+        <in>control_avoid_adsb.cpp</in>
+        <in>control_brake.cpp</in>
+        <in>control_circle.cpp</in>
+        <in>control_drift.cpp</in>
+        <in>control_flip.cpp</in>
+        <in>control_guided.cpp</in>
+        <in>control_guided_nogps.cpp</in>
+        <in>control_land.cpp</in>
+        <in>control_loiter.cpp</in>
+        <in>control_poshold.cpp</in>
+        <in>control_rtl.cpp</in>
+        <in>control_sport.cpp</in>
+        <in>control_stabilize.cpp</in>
+        <in>control_throw.cpp</in>
+        <in>crash_check.cpp</in>
+        <in>ekf_check.cpp</in>
+        <in>esc_calibration.cpp</in>
+        <in>events.cpp</in>
+        <in>failsafe.cpp</in>
+        <in>fence.cpp</in>
+        <in>flight_mode.cpp</in>
+        <in>heli.cpp</in>
+        <in>heli_control_acro.cpp</in>
+        <in>heli_control_stabilize.cpp</in>
+        <in>inertia.cpp</in>
+        <in>land_detector.cpp</in>
+        <in>landing_gear.cpp</in>
+        <in>leds.cpp</in>
+        <in>motor_test.cpp</in>
+        <in>motors.cpp</in>
+        <in>navigation.cpp</in>
+        <in>perf_info.cpp</in>
+        <in>position_vector.cpp</in>
+        <in>precision_landing.cpp</in>
+        <in>radio.cpp</in>
+        <in>sensors.cpp</in>
+        <in>setup.cpp</in>
+        <in>switches.cpp</in>
+        <in>system.cpp</in>
+        <in>takeoff.cpp</in>
+        <in>terrain.cpp</in>
+        <in>test.cpp</in>
+        <in>tuning.cpp</in>
+      </df>
+      <df name="ArduPlane">
+        <in>ArduPlane.cpp</in>
+        <in>Attitude.cpp</in>
+        <in>GCS_Mavlink.cpp</in>
+        <in>Log.cpp</in>
+        <in>Parameters.cpp</in>
+        <in>Plane.cpp</in>
+        <in>afs_plane.cpp</in>
+        <in>altitude.cpp</in>
+        <in>arming_checks.cpp</in>
+        <in>avoidance_adsb.cpp</in>
+        <in>capabilities.cpp</in>
+        <in>commands.cpp</in>
+        <in>commands_logic.cpp</in>
+        <in>control_modes.cpp</in>
+        <in>events.cpp</in>
+        <in>failsafe.cpp</in>
+        <in>geofence.cpp</in>
+        <in>is_flying.cpp</in>
+        <in>landing.cpp</in>
+        <in>motor_test.cpp</in>
+        <in>navigation.cpp</in>
+        <in>parachute.cpp</in>
+        <in>px4_mixer.cpp</in>
+        <in>quadplane.cpp</in>
+        <in>radio.cpp</in>
+        <in>sensors.cpp</in>
+        <in>setup.cpp</in>
+        <in>system.cpp</in>
+        <in>takeoff.cpp</in>
+        <in>test.cpp</in>
+        <in>tiltrotor.cpp</in>
+        <in>tuning.cpp</in>
+      </df>
+      <df name="libraries">
+        <df name="AC_AttitudeControl">
+          <in>AC_AttitudeControl.cpp</in>
+          <in>AC_AttitudeControl_Heli.cpp</in>
+          <in>AC_AttitudeControl_Multi.cpp</in>
+          <in>AC_PosControl.cpp</in>
+          <in>ControlMonitor.cpp</in>
+        </df>
+        <df name="AC_Avoidance">
+          <in>AC_Avoid.cpp</in>
+        </df>
+        <df name="AC_Fence">
+          <in>AC_Fence.cpp</in>
+          <in>AC_PolyFence_loader.cpp</in>
+        </df>
+        <df name="AC_InputManager">
+          <in>AC_InputManager.cpp</in>
+          <in>AC_InputManager_Heli.cpp</in>
+        </df>
+        <df name="AC_PID">
+          <in>AC_HELI_PID.cpp</in>
+          <in>AC_P.cpp</in>
+          <in>AC_PID.cpp</in>
+          <in>AC_PI_2D.cpp</in>
+        </df>
+        <df name="AC_PrecLand">
+          <in>AC_PrecLand.cpp</in>
+          <in>AC_PrecLand_Companion.cpp</in>
+          <in>AC_PrecLand_IRLock.cpp</in>
+        </df>
+        <df name="AC_Sprayer">
+          <in>AC_Sprayer.cpp</in>
+        </df>
+        <df name="AC_WPNav">
+          <in>AC_Circle.cpp</in>
+          <in>AC_WPNav.cpp</in>
+        </df>
+        <df name="AP_AccelCal">
+          <in>AP_AccelCal.cpp</in>
+          <in>AccelCalibrator.cpp</in>
+        </df>
+        <df name="AP_ADC">
+          <in>AP_ADC.cpp</in>
+          <in>AP_ADC_ADS1115.cpp</in>
+        </df>
+        <df name="AP_ADSB">
+          <in>AP_ADSB.cpp</in>
+        </df>
+        <df name="AP_AdvancedFailsafe">
+          <in>AP_AdvancedFailsafe.cpp</in>
+        </df>
+        <df name="AP_AHRS">
+          <in>AP_AHRS.cpp</in>
+          <in>AP_AHRS_DCM.cpp</in>
+          <in>AP_AHRS_NavEKF.cpp</in>
+        </df>
+        <df name="AP_Airspeed">
+          <in>AP_Airspeed.cpp</in>
+          <in>AP_Airspeed_I2C.cpp</in>
+          <in>AP_Airspeed_PX4.cpp</in>
+          <in>AP_Airspeed_analog.cpp</in>
+          <in>Airspeed_Calibration.cpp</in>
+        </df>
+        <df name="AP_Arming">
+          <in>AP_Arming.cpp</in>
+        </df>
+        <df name="AP_Avoidance">
+          <in>AP_Avoidance.cpp</in>
+        </df>
+        <df name="AP_Baro">
+          <in>AP_Baro.cpp</in>
+          <in>AP_Baro_BMP085.cpp</in>
+          <in>AP_Baro_Backend.cpp</in>
+          <in>AP_Baro_HIL.cpp</in>
+          <in>AP_Baro_MS5611.cpp</in>
+          <in>AP_Baro_PX4.cpp</in>
+          <in>AP_Baro_QURT.cpp</in>
+          <in>AP_Baro_qflight.cpp</in>
+        </df>
+        <df name="AP_BattMonitor">
+          <in>AP_BattMonitor.cpp</in>
+          <in>AP_BattMonitor_Analog.cpp</in>
+          <in>AP_BattMonitor_Backend.cpp</in>
+          <in>AP_BattMonitor_Bebop.cpp</in>
+          <in>AP_BattMonitor_SMBus_I2C.cpp</in>
+          <in>AP_BattMonitor_SMBus_PX4.cpp</in>
+        </df>
+        <df name="AP_BoardConfig">
+          <in>AP_BoardConfig.cpp</in>
+          <in>px4_drivers.cpp</in>
+        </df>
+        <df name="AP_Button">
+          <in>AP_Button.cpp</in>
+        </df>
+        <df name="AP_Camera">
+          <in>AP_Camera.cpp</in>
+        </df>
+        <df name="AP_Common">
+          <in>AP_Common.cpp</in>
+          <in>Location.cpp</in>
+          <in>c++.cpp</in>
+        </df>
+        <df name="AP_Compass">
+          <in>AP_Compass.cpp</in>
+          <in>AP_Compass_AK8963.cpp</in>
+          <in>AP_Compass_BMM150.cpp</in>
+          <in>AP_Compass_Backend.cpp</in>
+          <in>AP_Compass_Calibration.cpp</in>
+          <in>AP_Compass_HIL.cpp</in>
+          <in>AP_Compass_HMC5843.cpp</in>
+          <in>AP_Compass_LSM303D.cpp</in>
+          <in>AP_Compass_LSM9DS1.cpp</in>
+          <in>AP_Compass_PX4.cpp</in>
+          <in>AP_Compass_QURT.cpp</in>
+          <in>AP_Compass_qflight.cpp</in>
+          <in>CompassCalibrator.cpp</in>
+          <in>Compass_learn.cpp</in>
+        </df>
+        <df name="AP_Declination">
+          <in>AP_Declination.cpp</in>
+        </df>
+        <df name="AP_EPM">
+          <in>AP_EPM.cpp</in>
+        </df>
+        <df name="AP_Frsky_Telem">
+          <in>AP_Frsky_Telem.cpp</in>
+        </df>
+        <df name="AP_GPS">
+          <in>AP_GPS.cpp</in>
+          <in>AP_GPS_ERB.cpp</in>
+          <in>AP_GPS_GSOF.cpp</in>
+          <in>AP_GPS_MAV.cpp</in>
+          <in>AP_GPS_MTK.cpp</in>
+          <in>AP_GPS_MTK19.cpp</in>
+          <in>AP_GPS_NMEA.cpp</in>
+          <in>AP_GPS_PX4.cpp</in>
+          <in>AP_GPS_QURT.cpp</in>
+          <in>AP_GPS_SBF.cpp</in>
+          <in>AP_GPS_SBP.cpp</in>
+          <in>AP_GPS_SIRF.cpp</in>
+          <in>AP_GPS_UBLOX.cpp</in>
+          <in>GPS_Backend.cpp</in>
+        </df>
+        <df name="AP_HAL">
+          <df name="utility">
+            <in>Print.cpp</in>
+            <in>RingBuffer.cpp</in>
+            <in>Socket.cpp</in>
+            <in>dsm.cpp</in>
+            <in>ftoa_engine.cpp</in>
+            <in>getopt_cpp.cpp</in>
+            <in>print_vprintf.cpp</in>
+            <in>utoa_invert.cpp</in>
+          </df>
+          <in>HAL.cpp</in>
+          <in>UARTDriver.cpp</in>
+          <in>Util.cpp</in>
+        </df>
+        <df name="AP_HAL_Empty">
+          <in>AnalogIn.cpp</in>
+          <in>GPIO.cpp</in>
+          <in>HAL_Empty_Class.cpp</in>
+          <in>PrivateMember.cpp</in>
+          <in>RCInput.cpp</in>
+          <in>RCOutput.cpp</in>
+          <in>Scheduler.cpp</in>
+          <in>Semaphores.cpp</in>
+          <in>Storage.cpp</in>
+          <in>UARTDriver.cpp</in>
+        </df>
+        <df name="AP_HAL_SITL">
+          <in>AnalogIn.cpp</in>
+          <in>GPIO.cpp</in>
+          <in>HAL_SITL_Class.cpp</in>
+          <in>RCInput.cpp</in>
+          <in>RCOutput.cpp</in>
+          <in>SITL_State.cpp</in>
+          <in>SITL_cmdline.cpp</in>
+          <in>Scheduler.cpp</in>
+          <in>Semaphores.cpp</in>
+          <in>Storage.cpp</in>
+          <in>UARTDriver.cpp</in>
+          <in>sitl_barometer.cpp</in>
+          <in>sitl_compass.cpp</in>
+          <in>sitl_gps.cpp</in>
+          <in>sitl_ins.cpp</in>
+          <in>sitl_optical_flow.cpp</in>
+          <in>system.cpp</in>
+        </df>
+        <df name="AP_Humidity">
+          <in>AP_HumidityTemperature_HTU21D.cpp</in>
+          <in>AP_HumidityTemperature_HTU21D.h</in>
+        </df>
+        <df name="AP_ICEngine">
+          <in>AP_ICEngine.cpp</in>
+        </df>
+        <df name="AP_InertialNav">
+          <in>AP_InertialNav_NavEKF.cpp</in>
+        </df>
+        <df name="AP_InertialSensor">
+          <in>AP_InertialSensor.cpp</in>
+          <in>AP_InertialSensor_BMI160.cpp</in>
+          <in>AP_InertialSensor_Backend.cpp</in>
+          <in>AP_InertialSensor_HIL.cpp</in>
+          <in>AP_InertialSensor_L3G4200D.cpp</in>
+          <in>AP_InertialSensor_LSM9DS0.cpp</in>
+          <in>AP_InertialSensor_MPU6000.cpp</in>
+          <in>AP_InertialSensor_MPU9250.cpp</in>
+          <in>AP_InertialSensor_PX4.cpp</in>
+          <in>AP_InertialSensor_QURT.cpp</in>
+          <in>AP_InertialSensor_SITL.cpp</in>
+          <in>AP_InertialSensor_UserInteract_MAVLink.cpp</in>
+          <in>AP_InertialSensor_UserInteract_Stream.cpp</in>
+          <in>AP_InertialSensor_qflight.cpp</in>
+          <in>AuxiliaryBus.cpp</in>
+        </df>
+        <df name="AP_IRLock">
+          <in>AP_IRLock_PX4.cpp</in>
+          <in>IRLock.cpp</in>
+        </df>
+        <df name="AP_L1_Control">
+          <in>AP_L1_Control.cpp</in>
+        </df>
+        <df name="AP_LandingGear">
+          <in>AP_LandingGear.cpp</in>
+        </df>
+        <df name="AP_Math">
+          <in>AP_GeodesicGrid.cpp</in>
+          <in>AP_Math.cpp</in>
+          <in>edc.cpp</in>
+          <in>location.cpp</in>
+          <in>matrix3.cpp</in>
+          <in>matrix_alg.cpp</in>
+          <in>polygon.cpp</in>
+          <in>quaternion.cpp</in>
+          <in>vector2.cpp</in>
+          <in>vector3.cpp</in>
+        </df>
+        <df name="AP_Menu">
+          <in>AP_Menu.cpp</in>
+        </df>
+        <df name="AP_Mission">
+          <in>AP_Mission.cpp</in>
+        </df>
+        <df name="AP_Module">
+          <in>AP_Module.cpp</in>
+        </df>
+        <df name="AP_Motors">
+          <in>AP_MotorsCoax.cpp</in>
+          <in>AP_MotorsHeli.cpp</in>
+          <in>AP_MotorsHeli_RSC.cpp</in>
+          <in>AP_MotorsHeli_Single.cpp</in>
+          <in>AP_MotorsHexa.cpp</in>
+          <in>AP_MotorsMatrix.cpp</in>
+          <in>AP_MotorsMulticopter.cpp</in>
+          <in>AP_MotorsOcta.cpp</in>
+          <in>AP_MotorsOctaQuad.cpp</in>
+          <in>AP_MotorsQuad.cpp</in>
+          <in>AP_MotorsSingle.cpp</in>
+          <in>AP_MotorsTri.cpp</in>
+          <in>AP_MotorsY6.cpp</in>
+          <in>AP_Motors_Class.cpp</in>
+        </df>
+        <df name="AP_Mount">
+          <in>AP_Mount.cpp</in>
+          <in>AP_Mount_Alexmos.cpp</in>
+          <in>AP_Mount_Backend.cpp</in>
+          <in>AP_Mount_SToRM32.cpp</in>
+          <in>AP_Mount_SToRM32_serial.cpp</in>
+          <in>AP_Mount_Servo.cpp</in>
+          <in>AP_Mount_SoloGimbal.cpp</in>
+          <in>SoloGimbal.cpp</in>
+          <in>SoloGimbalEKF.cpp</in>
+          <in>SoloGimbal_Parameters.cpp</in>
+        </df>
+        <df name="AP_NavEKF">
+          <in>AP_NavEKF.cpp</in>
+          <in>AP_NavEKF_core.cpp</in>
+        </df>
+        <df name="AP_NavEKF2">
+          <in>AP_NavEKF2.cpp</in>
+          <in>AP_NavEKF2_AirDataFusion.cpp</in>
+          <in>AP_NavEKF2_Control.cpp</in>
+          <in>AP_NavEKF2_MagFusion.cpp</in>
+          <in>AP_NavEKF2_Measurements.cpp</in>
+          <in>AP_NavEKF2_OptFlowFusion.cpp</in>
+          <in>AP_NavEKF2_Outputs.cpp</in>
+          <in>AP_NavEKF2_PosVelFusion.cpp</in>
+          <in>AP_NavEKF2_VehicleStatus.cpp</in>
+          <in>AP_NavEKF2_core.cpp</in>
+          <in>AP_NavEKF_GyroBias.cpp</in>
+        </df>
+        <df name="AP_Notify">
+          <in>AP_BoardLED.cpp</in>
+          <in>AP_Notify.cpp</in>
+          <in>Buzzer.cpp</in>
+          <in>DiscreteRGBLed.cpp</in>
+          <in>Display.cpp</in>
+          <in>Display_SSD1306_I2C.cpp</in>
+          <in>ExternalLED.cpp</in>
+          <in>NavioLED.cpp</in>
+          <in>NavioLED_I2C.cpp</in>
+          <in>OreoLED_PX4.cpp</in>
+          <in>RCOutputRGBLed.cpp</in>
+          <in>RGBLed.cpp</in>
+          <in>ToneAlarm_Linux.cpp</in>
+          <in>ToneAlarm_PX4.cpp</in>
+          <in>ToneAlarm_PX4_Solo.cpp</in>
+          <in>ToshibaLED.cpp</in>
+          <in>ToshibaLED_I2C.cpp</in>
+          <in>ToshibaLED_PX4.cpp</in>
+          <in>VRBoard_LED.cpp</in>
+        </df>
+        <df name="AP_OpticalFlow">
+          <in>AP_OpticalFlow_HIL.cpp</in>
+          <in>AP_OpticalFlow_Linux.cpp</in>
+          <in>AP_OpticalFlow_Onboard.cpp</in>
+          <in>AP_OpticalFlow_PX4.cpp</in>
+          <in>OpticalFlow.cpp</in>
+          <in>OpticalFlow_backend.cpp</in>
+        </df>
+        <df name="AP_Parachute">
+          <in>AP_Parachute.cpp</in>
+        </df>
+        <df name="AP_Param">
+          <in>AP_Param.cpp</in>
+        </df>
+        <df name="AP_Rally">
+          <in>AP_Rally.cpp</in>
+        </df>
+        <df name="AP_RangeFinder">
+          <in>AP_RangeFinder_BBB_PRU.cpp</in>
+          <in>AP_RangeFinder_Bebop.cpp</in>
+          <in>AP_RangeFinder_LightWareI2C.cpp</in>
+          <in>AP_RangeFinder_LightWareSerial.cpp</in>
+          <in>AP_RangeFinder_MAVLink.cpp</in>
+          <in>AP_RangeFinder_MaxsonarI2CXL.cpp</in>
+          <in>AP_RangeFinder_PX4.cpp</in>
+          <in>AP_RangeFinder_PX4_PWM.cpp</in>
+          <in>AP_RangeFinder_PulsedLightLRF.cpp</in>
+          <in>AP_RangeFinder_analog.cpp</in>
+          <in>RangeFinder.cpp</in>
+          <in>RangeFinder_Backend.cpp</in>
+        </df>
+        <df name="AP_RCMapper">
+          <in>AP_RCMapper.cpp</in>
+        </df>
+        <df name="AP_Relay">
+          <in>AP_Relay.cpp</in>
+        </df>
+        <df name="AP_RPM">
+          <in>AP_RPM.cpp</in>
+          <in>RPM_Backend.cpp</in>
+          <in>RPM_PX4_PWM.cpp</in>
+          <in>RPM_SITL.cpp</in>
+        </df>
+        <df name="AP_RSSI">
+          <in>AP_RSSI.cpp</in>
+        </df>
+        <df name="AP_Scheduler">
+          <in>AP_Scheduler.cpp</in>
+        </df>
+        <df name="AP_SerialManager">
+          <in>AP_SerialManager.cpp</in>
+        </df>
+        <df name="AP_ServoRelayEvents">
+          <in>AP_ServoRelayEvents.cpp</in>
+        </df>
+        <df name="AP_TECS">
+          <in>AP_TECS.cpp</in>
+        </df>
+        <df name="AP_Terrain">
+          <in>AP_Terrain.cpp</in>
+          <in>TerrainGCS.cpp</in>
+          <in>TerrainIO.cpp</in>
+          <in>TerrainMission.cpp</in>
+          <in>TerrainUtil.cpp</in>
+        </df>
+        <df name="AP_Tuning">
+          <in>AP_Tuning.cpp</in>
+        </df>
+        <df name="APM_Control">
+          <in>AP_AutoTune.cpp</in>
+          <in>AP_PitchController.cpp</in>
+          <in>AP_RollController.cpp</in>
+          <in>AP_SteerController.cpp</in>
+          <in>AP_YawController.cpp</in>
+        </df>
+        <df name="DataFlash">
+          <in>DFMessageWriter.cpp</in>
+          <in>DataFlash.cpp</in>
+          <in>DataFlash_Backend.cpp</in>
+          <in>DataFlash_Block.cpp</in>
+          <in>DataFlash_File.cpp</in>
+          <in>DataFlash_MAVLink.cpp</in>
+          <in>DataFlash_SITL.cpp</in>
+          <in>LogFile.cpp</in>
+        </df>
+        <df name="Filter">
+          <in>DerivativeFilter.cpp</in>
+          <in>LowPassFilter.cpp</in>
+          <in>LowPassFilter2p.cpp</in>
+        </df>
+        <df name="GCS_MAVLink">
+          <in>GCS_Common.cpp</in>
+          <in>GCS_Logs.cpp</in>
+          <in>GCS_MAVLink.cpp</in>
+          <in>GCS_Signing.cpp</in>
+          <in>GCS_serial_control.cpp</in>
+          <in>MAVLink_routing.cpp</in>
+        </df>
+        <df name="PID">
+          <in>PID.cpp</in>
+        </df>
+        <df name="RC_Channel">
+          <in>RC_Channel.cpp</in>
+          <in>RC_Channel_aux.cpp</in>
+        </df>
+        <df name="SITL">
+          <in>SIM_ADSB.cpp</in>
+          <in>SIM_Aircraft.cpp</in>
+          <in>SIM_Balloon.cpp</in>
+          <in>SIM_CRRCSim.cpp</in>
+          <in>SIM_Calibration.cpp</in>
+          <in>SIM_FlightAxis.cpp</in>
+          <in>SIM_Frame.cpp</in>
+          <in>SIM_Gazebo.cpp</in>
+          <in>SIM_Gimbal.cpp</in>
+          <in>SIM_Helicopter.cpp</in>
+          <in>SIM_ICEngine.cpp</in>
+          <in>SIM_JSBSim.cpp</in>
+          <in>SIM_Motor.cpp</in>
+          <in>SIM_Multicopter.cpp</in>
+          <in>SIM_Plane.cpp</in>
+          <in>SIM_QuadPlane.cpp</in>
+          <in>SIM_Rover.cpp</in>
+          <in>SIM_SingleCopter.cpp</in>
+          <in>SIM_Tracker.cpp</in>
+          <in>SIM_XPlane.cpp</in>
+          <in>SIM_last_letter.cpp</in>
+          <in>SITL.cpp</in>
+        </df>
+        <df name="StorageManager">
+          <in>StorageManager.cpp</in>
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-O3 -std=gnu++11 -fno-exceptions"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>libraries/AP_Humidity/examples/DHT22/DHT22.elf</executablePath>
+          <ccTool>
+            <incDir>
+              <pElem>libraries/AP_Common/missing</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>APM_BUILD_DIRECTORY=APM_BUILD_ArduPlane</Elem>
+              <Elem>CONFIG_HAL_BOARD=HAL_BOARD_SITL</Elem>
+              <Elem>CONFIG_HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE</Elem>
+              <Elem>F_CPU=</Elem>
+              <Elem>GIT_VERSION="22b5c415"</Elem>
+              <Elem>HAVE_BYTESWAP_H</Elem>
+              <Elem>HAVE_CMATH_ISFINITE</Elem>
+              <Elem>HAVE_ENDIAN_H</Elem>
+              <Elem>MAVLINK_PROTOCOL_VERSION=2</Elem>
+              <Elem>NEED_CMATH_ISFINITE_STD_NAMESPACE</Elem>
+              <Elem>SKETCH="ArduPlane"</Elem>
+              <Elem>SKETCHBOOK="/home/juvinski/Projetos/AgroRaptor/ardupilot"</Elem>
+              <Elem>SKETCHNAME="ArduPlane"</Elem>
+              <Elem>_GNU_SOURCE</Elem>
+            </preprocessorList>
+          </ccTool>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="APMrover2/APMrover2.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="APMrover2/GCS_Mavlink.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="APMrover2/Log.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="APMrover2/Parameters.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="APMrover2/Rover.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="APMrover2/Steering.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="APMrover2/capabilities.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="APMrover2/commands.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="APMrover2/commands_logic.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="APMrover2/commands_process.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="APMrover2/compat.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="APMrover2/control_modes.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="APMrover2/events.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="APMrover2/failsafe.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="APMrover2/navigation.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="APMrover2/radio.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="APMrover2/sensors.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="APMrover2/setup.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="APMrover2/system.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="APMrover2/test.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="AntennaTracker/AntennaTracker.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="AntennaTracker/GCS_Mavlink.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="AntennaTracker/Log.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="AntennaTracker/Parameters.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="AntennaTracker/capabilities.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="AntennaTracker/control_auto.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="AntennaTracker/control_manual.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="AntennaTracker/control_scan.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="AntennaTracker/control_servo_test.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="AntennaTracker/radio.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="AntennaTracker/sensors.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="AntennaTracker/servos.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="AntennaTracker/system.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="AntennaTracker/tracking.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/AP_Rally.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/AP_State.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/ArduCopter.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/Attitude.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/Copter.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/GCS_Mavlink.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/Log.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/Parameters.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/UserCode.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/afs_copter.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/arming_checks.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/avoidance_adsb.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/baro_ground_effect.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/capabilities.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/commands.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/commands_logic.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/compassmot.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/compat.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/control_acro.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/control_althold.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/control_auto.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/control_autotune.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/control_avoid_adsb.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/control_brake.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/control_circle.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/control_drift.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/control_flip.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/control_guided.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/control_guided_nogps.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/control_land.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/control_loiter.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/control_poshold.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/control_rtl.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/control_sport.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/control_stabilize.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/control_throw.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/crash_check.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/ekf_check.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/esc_calibration.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/events.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/failsafe.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/fence.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/flight_mode.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/heli.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/heli_control_acro.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/heli_control_stabilize.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/inertia.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/land_detector.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/landing_gear.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/leds.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/motor_test.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/motors.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/navigation.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/perf_info.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/position_vector.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/precision_landing.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/radio.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/sensors.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/setup.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/switches.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/system.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/takeoff.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/terrain.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/test.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduCopter/tuning.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/ArduPlane.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/Attitude.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/GCS_Mavlink.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/Log.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/Parameters.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/Plane.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/afs_plane.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/altitude.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/arming_checks.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/avoidance_adsb.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/capabilities.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/commands.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/commands_logic.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/control_modes.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/events.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/failsafe.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/geofence.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/is_flying.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/landing.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/motor_test.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/navigation.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/parachute.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/px4_mixer.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/quadplane.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/radio.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/sensors.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/setup.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/system.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/takeoff.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/test.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/tiltrotor.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ArduPlane/tuning.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <folder path="0/APMrover2">
+        <ccTool>
+          <incDir>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/APMrover2.build/libraries</pElem>
+            <pElem>/tmp/APMrover2.build/libraries/GCS_MAVLink</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>APM_BUILD_DIRECTORY=APM_BUILD_APMrover2</Elem>
+            <Elem>SKETCH="APMrover2"</Elem>
+            <Elem>SKETCHNAME="APMrover2"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/AntennaTracker">
+        <ccTool>
+          <incDir>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/AntennaTracker.build/libraries</pElem>
+            <pElem>/tmp/AntennaTracker.build/libraries/GCS_MAVLink</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>APM_BUILD_DIRECTORY=APM_BUILD_AntennaTracker</Elem>
+            <Elem>SKETCH="AntennaTracker"</Elem>
+            <Elem>SKETCHNAME="AntennaTracker"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/ArduCopter">
+        <ccTool>
+          <incDir>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduCopter.build/libraries</pElem>
+            <pElem>/tmp/ArduCopter.build/libraries/GCS_MAVLink</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>APM_BUILD_DIRECTORY=APM_BUILD_ArduCopter</Elem>
+            <Elem>SKETCH="ArduCopter"</Elem>
+            <Elem>SKETCHNAME="ArduCopter"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/ArduPlane">
+        <ccTool>
+          <incDir>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AC_AttitudeControl">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AC_AttitudeControl/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AC_Avoidance">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AC_Avoidance/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AC_Fence">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AC_Fence/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AC_InputManager">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AC_InputManager/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduCopter.build/libraries</pElem>
+            <pElem>/tmp/ArduCopter.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduCopter</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>APM_BUILD_DIRECTORY=APM_BUILD_ArduCopter</Elem>
+            <Elem>SKETCH="ArduCopter"</Elem>
+            <Elem>SKETCHNAME="ArduCopter"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AC_PID">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AC_PID/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AC_PrecLand">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AC_PrecLand/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduCopter.build/libraries</pElem>
+            <pElem>/tmp/ArduCopter.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduCopter</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>APM_BUILD_DIRECTORY=APM_BUILD_ArduCopter</Elem>
+            <Elem>SKETCH="ArduCopter"</Elem>
+            <Elem>SKETCHNAME="ArduCopter"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AC_Sprayer">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AC_Sprayer/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduCopter.build/libraries</pElem>
+            <pElem>/tmp/ArduCopter.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduCopter</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>APM_BUILD_DIRECTORY=APM_BUILD_ArduCopter</Elem>
+            <Elem>SKETCH="ArduCopter"</Elem>
+            <Elem>SKETCHNAME="ArduCopter"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AC_WPNav">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AC_WPNav/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/APM_Control">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/APM_Control/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_ADC">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_ADC/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_ADSB">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_ADSB/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_AHRS">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_AHRS/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_AccelCal">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_AccelCal/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_AdvancedFailsafe">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_AdvancedFailsafe/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Airspeed">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Airspeed/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Arming">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Arming/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Avoidance">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Avoidance/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Baro">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Baro/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_BattMonitor">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_BattMonitor/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_BoardConfig">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_BoardConfig/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Button">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Button/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Camera">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Camera/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Common">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Common/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Compass">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Compass/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Declination">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Declination/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_EPM">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_EPM/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduCopter.build/libraries</pElem>
+            <pElem>/tmp/ArduCopter.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduCopter</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>APM_BUILD_DIRECTORY=APM_BUILD_ArduCopter</Elem>
+            <Elem>SKETCH="ArduCopter"</Elem>
+            <Elem>SKETCHNAME="ArduCopter"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Frsky_Telem">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Frsky_Telem/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_GPS">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_GPS/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_HAL/utility">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_HAL/utility/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_HAL_Empty">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_HAL_Empty/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_HAL_SITL">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_HAL_SITL/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_ICEngine">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_ICEngine/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_IRLock">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_IRLock/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduCopter.build/libraries</pElem>
+            <pElem>/tmp/ArduCopter.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduCopter</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>APM_BUILD_DIRECTORY=APM_BUILD_ArduCopter</Elem>
+            <Elem>SKETCH="ArduCopter"</Elem>
+            <Elem>SKETCHNAME="ArduCopter"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_InertialNav">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_InertialNav/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_InertialSensor">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_InertialSensor/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_L1_Control">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_L1_Control/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_LandingGear">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_LandingGear/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduCopter.build/libraries</pElem>
+            <pElem>/tmp/ArduCopter.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduCopter</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>APM_BUILD_DIRECTORY=APM_BUILD_ArduCopter</Elem>
+            <Elem>SKETCH="ArduCopter"</Elem>
+            <Elem>SKETCHNAME="ArduCopter"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Math">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Math/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Menu">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Menu/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Mission">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Mission/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Module">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Module/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Motors">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Motors/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Mount">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Mount/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_NavEKF">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_NavEKF/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_NavEKF2">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_NavEKF2/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Notify">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Notify/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_OpticalFlow">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_OpticalFlow/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Parachute">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Parachute/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Param">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Param/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_RCMapper">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_RCMapper/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_RPM">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_RPM/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_RSSI">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_RSSI/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Rally">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Rally/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_RangeFinder">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_RangeFinder/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Relay">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Relay/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Scheduler">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Scheduler/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_SerialManager">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_SerialManager/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_ServoRelayEvents">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_ServoRelayEvents/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_TECS">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_TECS/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Terrain">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Terrain/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/AP_Tuning">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/AP_Tuning/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/DataFlash">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/DataFlash/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/Filter">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/Filter/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/GCS_MAVLink">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/GCS_MAVLink/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/PID">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/PID/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/APMrover2.build/libraries</pElem>
+            <pElem>/tmp/APMrover2.build/libraries/GCS_MAVLink</pElem>
+            <pElem>APMrover2</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>APM_BUILD_DIRECTORY=APM_BUILD_APMrover2</Elem>
+            <Elem>SKETCH="APMrover2"</Elem>
+            <Elem>SKETCHNAME="APMrover2"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/RC_Channel">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/RC_Channel/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/SITL">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/SITL/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/libraries/StorageManager">
+        <ccTool>
+          <incDir>
+            <pElem>libraries/StorageManager/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <item path="libraries/AC_AttitudeControl/AC_AttitudeControl.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AC_AttitudeControl/AC_AttitudeControl_Heli.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AC_AttitudeControl/AC_AttitudeControl_Multi.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AC_AttitudeControl/AC_PosControl.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AC_AttitudeControl/ControlMonitor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AC_Avoidance/AC_Avoid.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AC_Fence/AC_Fence.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AC_Fence/AC_PolyFence_loader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AC_InputManager/AC_InputManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AC_InputManager/AC_InputManager_Heli.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AC_PID/AC_HELI_PID.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AC_PID/AC_P.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AC_PID/AC_PID.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AC_PID/AC_PI_2D.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AC_PrecLand/AC_PrecLand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AC_PrecLand/AC_PrecLand_Companion.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AC_PrecLand/AC_PrecLand_IRLock.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AC_Sprayer/AC_Sprayer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AC_WPNav/AC_Circle.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AC_WPNav/AC_WPNav.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/APM_Control/AP_AutoTune.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/APM_Control/AP_PitchController.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/APM_Control/AP_RollController.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/APM_Control/AP_SteerController.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/APM_Control/AP_YawController.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_ADC/AP_ADC.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_ADC/AP_ADC_ADS1115.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_ADSB/AP_ADSB.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_AHRS/AP_AHRS.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_AHRS/AP_AHRS_DCM.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_AHRS/AP_AHRS_NavEKF.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_AccelCal/AP_AccelCal.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_AccelCal/AccelCalibrator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_AdvancedFailsafe/AP_AdvancedFailsafe.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Airspeed/AP_Airspeed.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Airspeed/AP_Airspeed_I2C.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Airspeed/AP_Airspeed_PX4.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Airspeed/AP_Airspeed_analog.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Airspeed/Airspeed_Calibration.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Arming/AP_Arming.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Avoidance/AP_Avoidance.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Baro/AP_Baro.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Baro/AP_Baro_BMP085.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Baro/AP_Baro_Backend.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Baro/AP_Baro_HIL.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Baro/AP_Baro_MS5611.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Baro/AP_Baro_PX4.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Baro/AP_Baro_QURT.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Baro/AP_Baro_qflight.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_BattMonitor/AP_BattMonitor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_BattMonitor/AP_BattMonitor_Analog.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_BattMonitor/AP_BattMonitor_Backend.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_BattMonitor/AP_BattMonitor_Bebop.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_BattMonitor/AP_BattMonitor_SMBus_I2C.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_BattMonitor/AP_BattMonitor_SMBus_PX4.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_BoardConfig/AP_BoardConfig.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_BoardConfig/px4_drivers.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Button/AP_Button.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Camera/AP_Camera.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Common/AP_Common.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Common/Location.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Common/c++.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Compass/AP_Compass.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Compass/AP_Compass_AK8963.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Compass/AP_Compass_BMM150.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Compass/AP_Compass_Backend.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Compass/AP_Compass_Calibration.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Compass/AP_Compass_HIL.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Compass/AP_Compass_HMC5843.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Compass/AP_Compass_LSM303D.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Compass/AP_Compass_LSM9DS1.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Compass/AP_Compass_PX4.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Compass/AP_Compass_QURT.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Compass/AP_Compass_qflight.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Compass/CompassCalibrator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Compass/Compass_learn.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Declination/AP_Declination.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_EPM/AP_EPM.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Frsky_Telem/AP_Frsky_Telem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_GPS/AP_GPS.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_GPS/AP_GPS_ERB.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_GPS/AP_GPS_GSOF.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_GPS/AP_GPS_MAV.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_GPS/AP_GPS_MTK.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_GPS/AP_GPS_MTK19.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_GPS/AP_GPS_NMEA.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_GPS/AP_GPS_PX4.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_GPS/AP_GPS_QURT.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_GPS/AP_GPS_SBF.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_GPS/AP_GPS_SBP.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_GPS/AP_GPS_SIRF.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_GPS/AP_GPS_UBLOX.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_GPS/GPS_Backend.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL/HAL.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>libraries/AP_HAL/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL/UARTDriver.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>libraries/AP_HAL/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL/Util.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>libraries/AP_HAL/utility</pElem>
+            <pElem>libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries</pElem>
+            <pElem>/tmp/ArduPlane.build/libraries/GCS_MAVLink</pElem>
+            <pElem>ArduPlane</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL/utility/Print.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL/utility/RingBuffer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL/utility/Socket.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL/utility/dsm.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL/utility/ftoa_engine.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL/utility/getopt_cpp.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL/utility/print_vprintf.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL/utility/utoa_invert.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_Empty/AnalogIn.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_Empty/GPIO.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_Empty/HAL_Empty_Class.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_Empty/PrivateMember.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_Empty/RCInput.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_Empty/RCOutput.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_Empty/Scheduler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_Empty/Semaphores.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_Empty/Storage.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_Empty/UARTDriver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_SITL/AnalogIn.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_SITL/GPIO.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_SITL/HAL_SITL_Class.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_SITL/RCInput.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_SITL/RCOutput.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_SITL/SITL_State.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_SITL/SITL_cmdline.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_SITL/Scheduler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_SITL/Semaphores.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_SITL/Storage.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_SITL/UARTDriver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_SITL/sitl_barometer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_SITL/sitl_compass.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_SITL/sitl_gps.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_SITL/sitl_ins.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_SITL/sitl_optical_flow.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_HAL_SITL/system.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Humidity/AP_HumidityTemperature_HTU21D.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="libraries/AP_Humidity/AP_HumidityTemperature_HTU21D.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="libraries/AP_ICEngine/AP_ICEngine.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_IRLock/AP_IRLock_PX4.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_IRLock/IRLock.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_InertialNav/AP_InertialNav_NavEKF.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_InertialSensor/AP_InertialSensor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_InertialSensor/AP_InertialSensor_BMI160.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_InertialSensor/AP_InertialSensor_Backend.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_InertialSensor/AP_InertialSensor_HIL.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_InertialSensor/AP_InertialSensor_L3G4200D.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_InertialSensor/AP_InertialSensor_LSM9DS0.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_InertialSensor/AP_InertialSensor_MPU6000.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_InertialSensor/AP_InertialSensor_MPU9250.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_InertialSensor/AP_InertialSensor_PX4.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_InertialSensor/AP_InertialSensor_QURT.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_InertialSensor/AP_InertialSensor_SITL.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_MAVLink.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_Stream.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_InertialSensor/AP_InertialSensor_qflight.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_InertialSensor/AuxiliaryBus.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_L1_Control/AP_L1_Control.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_LandingGear/AP_LandingGear.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Math/AP_GeodesicGrid.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Math/AP_Math.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Math/edc.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Math/location.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Math/matrix3.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Math/matrix_alg.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Math/polygon.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Math/quaternion.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Math/vector2.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Math/vector3.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Menu/AP_Menu.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Mission/AP_Mission.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Module/AP_Module.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Motors/AP_MotorsCoax.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Motors/AP_MotorsHeli.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Motors/AP_MotorsHeli_RSC.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Motors/AP_MotorsHeli_Single.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Motors/AP_MotorsHexa.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Motors/AP_MotorsMatrix.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Motors/AP_MotorsMulticopter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Motors/AP_MotorsOcta.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Motors/AP_MotorsOctaQuad.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Motors/AP_MotorsQuad.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Motors/AP_MotorsSingle.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Motors/AP_MotorsTri.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Motors/AP_MotorsY6.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Motors/AP_Motors_Class.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Mount/AP_Mount.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Mount/AP_Mount_Alexmos.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Mount/AP_Mount_Backend.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Mount/AP_Mount_SToRM32.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Mount/AP_Mount_SToRM32_serial.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Mount/AP_Mount_Servo.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Mount/AP_Mount_SoloGimbal.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Mount/SoloGimbal.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Mount/SoloGimbalEKF.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Mount/SoloGimbal_Parameters.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_NavEKF/AP_NavEKF.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_NavEKF/AP_NavEKF_core.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_NavEKF2/AP_NavEKF2.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_NavEKF2/AP_NavEKF2_AirDataFusion.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_NavEKF2/AP_NavEKF2_Control.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_NavEKF2/AP_NavEKF2_MagFusion.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_NavEKF2/AP_NavEKF2_Measurements.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_NavEKF2/AP_NavEKF2_OptFlowFusion.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_NavEKF2/AP_NavEKF2_Outputs.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_NavEKF2/AP_NavEKF2_PosVelFusion.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_NavEKF2/AP_NavEKF2_VehicleStatus.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_NavEKF2/AP_NavEKF2_core.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_NavEKF2/AP_NavEKF_GyroBias.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Notify/AP_BoardLED.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Notify/AP_Notify.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Notify/Buzzer.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Notify/DiscreteRGBLed.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Notify/Display.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Notify/Display_SSD1306_I2C.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Notify/ExternalLED.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Notify/NavioLED.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Notify/NavioLED_I2C.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Notify/OreoLED_PX4.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Notify/RCOutputRGBLed.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Notify/RGBLed.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Notify/ToneAlarm_Linux.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Notify/ToneAlarm_PX4.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Notify/ToneAlarm_PX4_Solo.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Notify/ToshibaLED.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Notify/ToshibaLED_I2C.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Notify/ToshibaLED_PX4.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Notify/VRBoard_LED.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_OpticalFlow/AP_OpticalFlow_HIL.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_OpticalFlow/AP_OpticalFlow_Linux.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_OpticalFlow/AP_OpticalFlow_Onboard.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_OpticalFlow/AP_OpticalFlow_PX4.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_OpticalFlow/OpticalFlow.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_OpticalFlow/OpticalFlow_backend.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Parachute/AP_Parachute.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Param/AP_Param.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_RCMapper/AP_RCMapper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_RPM/AP_RPM.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_RPM/RPM_Backend.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_RPM/RPM_PX4_PWM.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_RPM/RPM_SITL.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_RSSI/AP_RSSI.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Rally/AP_Rally.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_RangeFinder/AP_RangeFinder_BBB_PRU.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_RangeFinder/AP_RangeFinder_Bebop.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_RangeFinder/AP_RangeFinder_LightWareI2C.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_RangeFinder/AP_RangeFinder_LightWareSerial.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_RangeFinder/AP_RangeFinder_MAVLink.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarI2CXL.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_RangeFinder/AP_RangeFinder_PX4.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_RangeFinder/AP_RangeFinder_PX4_PWM.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_RangeFinder/AP_RangeFinder_PulsedLightLRF.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_RangeFinder/AP_RangeFinder_analog.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_RangeFinder/RangeFinder.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_RangeFinder/RangeFinder_Backend.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Relay/AP_Relay.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Scheduler/AP_Scheduler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_SerialManager/AP_SerialManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_ServoRelayEvents/AP_ServoRelayEvents.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_TECS/AP_TECS.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Terrain/AP_Terrain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Terrain/TerrainGCS.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Terrain/TerrainIO.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Terrain/TerrainMission.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Terrain/TerrainUtil.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/AP_Tuning/AP_Tuning.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/DataFlash/DFMessageWriter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/DataFlash/DataFlash.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/DataFlash/DataFlash_Backend.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/DataFlash/DataFlash_Block.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/DataFlash/DataFlash_File.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/DataFlash/DataFlash_MAVLink.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/DataFlash/DataFlash_SITL.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/DataFlash/LogFile.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/Filter/DerivativeFilter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/Filter/LowPassFilter.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/Filter/LowPassFilter2p.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/GCS_MAVLink/GCS_Common.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/GCS_MAVLink/GCS_Logs.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/GCS_MAVLink/GCS_MAVLink.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/GCS_MAVLink/GCS_Signing.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/GCS_MAVLink/GCS_serial_control.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/GCS_MAVLink/MAVLink_routing.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/PID/PID.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/RC_Channel/RC_Channel.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/RC_Channel/RC_Channel_aux.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SIM_ADSB.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SIM_Aircraft.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SIM_Balloon.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SIM_CRRCSim.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SIM_Calibration.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SIM_FlightAxis.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SIM_Frame.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SIM_Gazebo.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SIM_Gimbal.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SIM_Helicopter.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SIM_ICEngine.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SIM_JSBSim.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SIM_Motor.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SIM_Multicopter.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SIM_Plane.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SIM_QuadPlane.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SIM_Rover.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SIM_SingleCopter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SIM_Tracker.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SIM_XPlane.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SIM_last_letter.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/SITL/SITL.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="libraries/StorageManager/StorageManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

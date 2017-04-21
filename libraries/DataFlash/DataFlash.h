@@ -22,6 +22,7 @@
 #include <DataFlash/LogStructure.h>
 #include <AP_Motors/AP_Motors.h>
 #include <AP_Rally/AP_Rally.h>
+#include <AP_Humidity/HumidityTemperature.h>
 #include <stdint.h>
 
 #if CONFIG_HAL_BOARD == HAL_BOARD_PX4
@@ -153,6 +154,7 @@ public:
     void Log_Write_Rally(const AP_Rally &rally);
 
     void Log_Write(const char *name, const char *labels, const char *fmt, ...);
+    void Log_Humidity(const AP_AHRS &ahrs, const AP_GPS &gps, const Location &current_loc, AP_HumidityTemperature &current_humidity_temperature);
 
     // This structure provides information on the internal member data of a PID for logging purposes
     struct PID_Info {

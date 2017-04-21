@@ -1,0 +1,1534 @@
+/usr/bin/make -C ArduPlane sitl
+make[1]: Entering directory '/home/juvinski/Projetos/AgroRaptor/ardupilot/ArduPlane'
+Checking modules
+modules/PX4Firmware/src/lib/matrix/.git missing - need module init
++ git submodule init
++ [ -f modules/gbenchmark/.gitmodules ]
++ [ -f modules/gtest/.gitmodules ]
++ [ -f modules/mavlink/.gitmodules ]
++ cd modules/mavlink
++ git submodule init
++ [ -f modules/PX4Firmware/.gitmodules ]
++ cd modules/PX4Firmware
++ git submodule init
+Submodule 'Tools/gencpp' (https://github.com/ros/gencpp.git) registered for path 'Tools/gencpp'
+Submodule 'Tools/genmsg' (https://github.com/ros/genmsg.git) registered for path 'Tools/genmsg'
+Submodule 'mavlink/include/mavlink/v1.0' (git://github.com/mavlink/c_library.git) registered for path 'mavlink/include/mavlink/v1.0'
+Submodule 'src/lib/DriverFramework' (https://github.com/PX4/DriverFramework.git) registered for path 'src/lib/DriverFramework'
+Submodule 'src/lib/ecl' (https://github.com/PX4/ecl.git) registered for path 'src/lib/ecl'
+Submodule 'src/lib/matrix' (https://github.com/PX4/Matrix.git) registered for path 'src/lib/matrix'
+Submodule 'src/modules/uavcan/libuavcan' (git://github.com/UAVCAN/libuavcan.git) registered for path 'src/modules/uavcan/libuavcan'
++ [ -f modules/PX4Firmware/src/lib/matrix/.gitmodules ]
++ [ -f modules/PX4Firmware/Tools/gencpp/.gitmodules ]
++ [ -f modules/PX4Firmware/Tools/genmsg/.gitmodules ]
++ [ -f modules/PX4NuttX/.gitmodules ]
++ [ -f modules/uavcan/.gitmodules ]
++ cd modules/uavcan
++ git submodule init
+Submodule 'dsdl' (https://github.com/UAVCAN/dsdl) registered for path 'dsdl'
+Submodule 'libuavcan/dsdl_compiler/pyuavcan' (https://github.com/UAVCAN/pyuavcan) registered for path 'libuavcan/dsdl_compiler/pyuavcan'
++ [ -f modules/uavcan/dsdl/.gitmodules ]
++ [ -f modules/uavcan/libuavcan/dsdl_compiler/pyuavcan/.gitmodules ]
++ [ -f modules/waf/.gitmodules ]
++ git submodule update --recursive
+Cloning into 'Tools/gencpp'...
+Submodule path 'modules/PX4Firmware/Tools/gencpp': checked out '26a86f04bcec0018af6652b3ddd3f680e6e3fa2a'
+Cloning into 'Tools/genmsg'...
+Submodule path 'modules/PX4Firmware/Tools/genmsg': checked out '72f0383f0e6a489214c51802ae12d6e271b1e454'
+Cloning into 'mavlink/include/mavlink/v1.0'...
+Submodule path 'modules/PX4Firmware/mavlink/include/mavlink/v1.0': checked out 'bf251caef3dbf610e5152115a2d81e00e54ab7e7'
+Cloning into 'src/lib/DriverFramework'...
+Submodule path 'modules/PX4Firmware/src/lib/DriverFramework': checked out 'd6ef668f4564e1c158910c52df7d71114bd2ca4e'
+Cloning into 'src/lib/ecl'...
+Submodule path 'modules/PX4Firmware/src/lib/ecl': checked out 'f86ef3478219b4b1c31e17b8f308df4b69eda2f7'
+Cloning into 'src/lib/matrix'...
+Submodule path 'modules/PX4Firmware/src/lib/matrix': checked out '07fba8322a16cb2dac47e6a8ac7d21ec346313ff'
+Cloning into 'src/modules/uavcan/libuavcan'...
+Submodule path 'modules/PX4Firmware/src/modules/uavcan/libuavcan': checked out '702f6f05608885d3be993edb01394212bd2dade1'
+Cloning into 'dsdl'...
+Submodule path 'modules/uavcan/dsdl': checked out '9804a3e6972825586be252ce08dd899f44994b14'
+Cloning into 'libuavcan/dsdl_compiler/pyuavcan'...
+Submodule path 'modules/uavcan/libuavcan/dsdl_compiler/pyuavcan': checked out 'c58477a644d20ccf95a20c151f3a0402f271c3b8'
++ [ -d modules/gbenchmark ]
++ [ -f modules/gbenchmark/.git ]
++ [ -d modules/gtest ]
++ [ -f modules/gtest/.git ]
++ [ -d modules/mavlink ]
++ [ -f modules/mavlink/.git ]
++ [ -d modules/PX4Firmware ]
++ [ -f modules/PX4Firmware/.git ]
++ [ -d modules/PX4Firmware/src/lib/matrix ]
++ [ -f modules/PX4Firmware/src/lib/matrix/.git ]
++ [ -d modules/PX4Firmware/Tools/gencpp ]
++ [ -f modules/PX4Firmware/Tools/gencpp/.git ]
++ [ -d modules/PX4Firmware/Tools/genmsg ]
++ [ -f modules/PX4Firmware/Tools/genmsg/.git ]
++ [ -d modules/PX4NuttX ]
++ [ -f modules/PX4NuttX/.git ]
++ [ -d modules/uavcan ]
++ [ -f modules/uavcan/.git ]
++ [ -d modules/uavcan/dsdl ]
++ [ -f modules/uavcan/dsdl/.git ]
++ [ -d modules/uavcan/libuavcan/dsdl_compiler/pyuavcan ]
++ [ -f modules/uavcan/libuavcan/dsdl_compiler/pyuavcan/.git ]
++ [ -d modules/waf ]
++ [ -f modules/waf/.git ]
++ git submodule summary modules/gbenchmark
++ egrep ^..<
++ RET=
++ [ -z  ]
++ git submodule summary modules/gtest
++ egrep ^..<
++ RET=
++ [ -z  ]
++ git submodule summary modules/mavlink
++ egrep ^..<
++ RET=
++ [ -z  ]
++ git submodule summary modules/PX4Firmware
++ egrep ^..<
++ RET=
++ [ -z  ]
++ git submodule summary modules/PX4Firmware/src/lib/matrix
++ egrep ^..<
++ RET=
++ [ -z  ]
++ git submodule summary modules/PX4Firmware/Tools/gencpp
++ egrep ^..<
++ RET=
++ [ -z  ]
++ git submodule summary modules/PX4Firmware/Tools/genmsg
++ egrep ^..<
++ RET=
++ [ -z  ]
++ git submodule summary modules/PX4NuttX
++ egrep ^..<
++ RET=
++ [ -z  ]
++ git submodule summary modules/uavcan
++ egrep ^..<
++ RET=
++ [ -z  ]
++ git submodule summary modules/uavcan/dsdl
++ egrep ^..<
++ RET=
++ [ -z  ]
++ git submodule summary modules/uavcan/libuavcan/dsdl_compiler/pyuavcan
++ egrep ^..<
++ RET=
++ [ -z  ]
++ git submodule summary modules/waf
++ egrep ^..<
++ RET=
++ [ -z  ]
++ exit 0
+// BUILDROOT=/tmp/ArduPlane.build HAL_BOARD=HAL_BOARD_SITL HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE TOOLCHAIN=NATIVE EXTRAFLAGS=-DGIT_VERSION="22b5c415" -I/home/juvinski/Projetos/AgroRaptor/ardupilot/libraries/AP_Common/missing -DMAVLINK_PROTOCOL_VERSION=2 -DHAVE_CMATH_ISFINITE -DNEED_CMATH_ISFINITE_STD_NAMESPACE -DHAVE_ENDIAN_H -DHAVE_BYTESWAP_H
+echo "Generating MAVLink headers..."
+Generating MAVLink headers...
+#goto mavlink module directory and run the most recent generator script
+echo "Generating C code using mavgen.py located at" /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/
+Generating C code using mavgen.py located at /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/
+PYTHONPATH=/home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/ python /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink//pymavlink/tools/mavgen.py --lang=C --wire-protocol=2.0 --output=/tmp/ArduPlane.build/libraries/GCS_MAVLink/include/mavlink/v2.0 /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/ardupilotmega.xml
+Validating /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/ardupilotmega.xml
+Parsing /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/ardupilotmega.xml
+Note: message DATA64 is longer than 64 bytes long (74 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message DATA96 is longer than 64 bytes long (106 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message REMOTE_LOG_DATA_BLOCK is longer than 64 bytes long (214 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Validating /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/common.xml
+Parsing /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/common.xml
+Note: message GPS_STATUS is longer than 64 bytes long (109 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message ATTITUDE_QUATERNION_COV is longer than 64 bytes long (76 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message GLOBAL_POSITION_INT_COV is longer than 64 bytes long (193 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message LOCAL_POSITION_NED_COV is longer than 64 bytes long (237 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message HIGHRES_IMU is longer than 64 bytes long (70 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message HIL_SENSOR is longer than 64 bytes long (72 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message SIM_STATE is longer than 64 bytes long (92 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message FILE_TRANSFER_PROTOCOL is longer than 64 bytes long (262 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message HIL_STATE_QUATERNION is longer than 64 bytes long (72 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message LOG_DATA is longer than 64 bytes long (105 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message GPS_INJECT_DATA is longer than 64 bytes long (121 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message SERIAL_CONTROL is longer than 64 bytes long (87 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message ENCAPSULATED_DATA is longer than 64 bytes long (263 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message RESOURCE_REQUEST is longer than 64 bytes long (251 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message FOLLOW_TARGET is longer than 64 bytes long (101 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message CONTROL_SYSTEM_STATE is longer than 64 bytes long (108 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message AUTOPILOT_VERSION is longer than 64 bytes long (68 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message GPS_INPUT is longer than 64 bytes long (71 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message GPS_RTCM_DATA is longer than 64 bytes long (190 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message V2_EXTENSION is longer than 64 bytes long (262 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Validating /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/uAvionix.xml
+Parsing /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/uAvionix.xml
+Merged enum MAV_CMD
+Found 189 MAVLink message types in 3 XML files
+Generating C implementation in directory /tmp/ArduPlane.build/libraries/GCS_MAVLink/include/mavlink/v2.0/ardupilotmega
+Generating C implementation in directory /tmp/ArduPlane.build/libraries/GCS_MAVLink/include/mavlink/v2.0/common
+Generating C implementation in directory /tmp/ArduPlane.build/libraries/GCS_MAVLink/include/mavlink/v2.0/uAvionix
+Copying fixed headers for protocol 2.0 to /tmp/ArduPlane.build/libraries/GCS_MAVLink/include/mavlink/v2.0
+%% commands_logic.o
+%% motor_test.o
+%% arming_checks.o
+%% tiltrotor.o
+%% landing.o
+%% events.o
+%% ArduPlane.o
+%% Attitude.o
+%% quadplane.o
+%% setup.o
+%% avoidance_adsb.o
+%% altitude.o
+%% Parameters.o
+%% Plane.o
+%% parachute.o
+%% px4_mixer.o
+%% geofence.o
+%% failsafe.o
+%% GCS_Mavlink.o
+%% takeoff.o
+%% commands.o
+%% Log.o
+%% navigation.o
+%% system.o
+%% radio.o
+%% is_flying.o
+%% sensors.o
+%% afs_plane.o
+%% capabilities.o
+%% control_modes.o
+%% test.o
+%% tuning.o
+%% libraries/AP_Common/AP_Common.o
+%% libraries/AP_Common/c++.o
+%% libraries/AP_Common/Location.o
+%% libraries/AP_Menu/AP_Menu.o
+%% libraries/AP_Param/AP_Param.o
+%% libraries/StorageManager/StorageManager.o
+%% libraries/AP_GPS/AP_GPS_SBF.o
+%% libraries/AP_GPS/AP_GPS_ERB.o
+%% libraries/AP_GPS/AP_GPS_UBLOX.o
+%% libraries/AP_GPS/AP_GPS_NMEA.o
+%% libraries/AP_GPS/AP_GPS_SIRF.o
+%% libraries/AP_GPS/AP_GPS_SBP.o
+%% libraries/AP_GPS/AP_GPS.o
+%% libraries/AP_GPS/AP_GPS_GSOF.o
+%% libraries/AP_GPS/AP_GPS_MTK19.o
+%% libraries/AP_GPS/AP_GPS_MAV.o
+%% libraries/AP_GPS/GPS_Backend.o
+%% libraries/AP_GPS/AP_GPS_QURT.o
+%% libraries/AP_GPS/AP_GPS_MTK.o
+%% libraries/AP_GPS/AP_GPS_PX4.o
+%% libraries/AP_Baro/AP_Baro.o
+%% libraries/AP_Baro/AP_Baro_qflight.o
+%% libraries/AP_Baro/AP_Baro_HIL.o
+%% libraries/AP_Baro/AP_Baro_PX4.o
+%% libraries/AP_Baro/AP_Baro_MS5611.o
+%% libraries/AP_Baro/AP_Baro_QURT.o
+%% libraries/AP_Baro/AP_Baro_Backend.o
+%% libraries/AP_Baro/AP_Baro_BMP085.o
+%% libraries/AP_Compass/AP_Compass_Calibration.o
+%% libraries/AP_Compass/Compass_learn.o
+%% libraries/AP_Compass/AP_Compass_HIL.o
+%% libraries/AP_Compass/AP_Compass_qflight.o
+%% libraries/AP_Compass/AP_Compass.o
+%% libraries/AP_Compass/AP_Compass_BMM150.o
+%% libraries/AP_Compass/AP_Compass_HMC5843.o
+%% libraries/AP_Compass/AP_Compass_PX4.o
+%% libraries/AP_Compass/AP_Compass_QURT.o
+%% libraries/AP_Compass/AP_Compass_Backend.o
+%% libraries/AP_Compass/CompassCalibrator.o
+%% libraries/AP_Compass/AP_Compass_LSM9DS1.o
+%% libraries/AP_Compass/AP_Compass_AK8963.o
+%% libraries/AP_Compass/AP_Compass_LSM303D.o
+%% libraries/AP_Math/quaternion.o
+%% libraries/AP_Math/AP_GeodesicGrid.o
+%% libraries/AP_Math/vector2.o
+%% libraries/AP_Math/polygon.o
+%% libraries/AP_Math/matrix3.o
+%% libraries/AP_Math/matrix_alg.o
+%% libraries/AP_Math/edc.o
+%% libraries/AP_Math/AP_Math.o
+%% libraries/AP_Math/vector3.o
+%% libraries/AP_Math/location.o
+%% libraries/AP_ADC/AP_ADC.o
+%% libraries/AP_ADC/AP_ADC_ADS1115.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_SITL.o
+%% libraries/AP_InertialSensor/AuxiliaryBus.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_Backend.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_HIL.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_MPU9250.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_MPU6000.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_Stream.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_BMI160.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_L3G4200D.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_QURT.o
+%% libraries/AP_InertialSensor/AP_InertialSensor.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_qflight.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_MAVLink.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_LSM9DS0.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_PX4.o
+%% libraries/AP_AccelCal/AccelCalibrator.o
+%% libraries/AP_AccelCal/AP_AccelCal.o
+%% libraries/AP_AHRS/AP_AHRS_DCM.o
+%% libraries/AP_AHRS/AP_AHRS.o
+%% libraries/AP_AHRS/AP_AHRS_NavEKF.o
+%% libraries/RC_Channel/RC_Channel.o
+%% libraries/RC_Channel/RC_Channel_aux.o
+%% libraries/AP_RangeFinder/RangeFinder.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_Bebop.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_PX4_PWM.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_LightWareI2C.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_PulsedLightLRF.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_analog.o
+%% libraries/AP_RangeFinder/RangeFinder_Backend.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarI2CXL.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_BBB_PRU.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_LightWareSerial.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_PX4.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_MAVLink.o
+%% libraries/Filter/LowPassFilter.o
+%% libraries/Filter/LowPassFilter2p.o
+%% libraries/Filter/DerivativeFilter.o
+%% libraries/AP_Relay/AP_Relay.o
+%% libraries/AP_Camera/AP_Camera.o
+%% libraries/AP_Airspeed/AP_Airspeed_I2C.o
+%% libraries/AP_Airspeed/Airspeed_Calibration.o
+%% libraries/AP_Airspeed/AP_Airspeed_analog.o
+%% libraries/AP_Airspeed/AP_Airspeed.o
+%% libraries/AP_Airspeed/AP_Airspeed_PX4.o
+%% libraries/AP_Terrain/TerrainIO.o
+%% libraries/AP_Terrain/TerrainMission.o
+%% libraries/AP_Terrain/TerrainGCS.o
+%% libraries/AP_Terrain/AP_Terrain.o
+%% libraries/AP_Terrain/TerrainUtil.o
+%% libraries/AP_AdvancedFailsafe/AP_AdvancedFailsafe.o
+%% libraries/APM_Control/AP_AutoTune.o
+%% libraries/APM_Control/AP_SteerController.o
+%% libraries/APM_Control/AP_YawController.o
+%% libraries/APM_Control/AP_RollController.o
+%% libraries/APM_Control/AP_PitchController.o
+%% libraries/GCS_MAVLink/GCS_Common.o
+%% libraries/GCS_MAVLink/GCS_Signing.o
+%% libraries/GCS_MAVLink/GCS_serial_control.o
+%% libraries/GCS_MAVLink/GCS_Logs.o
+%% libraries/GCS_MAVLink/MAVLink_routing.o
+%% libraries/GCS_MAVLink/GCS_MAVLink.o
+%% libraries/AP_SerialManager/AP_SerialManager.o
+%% libraries/AP_Mount/AP_Mount_Backend.o
+%% libraries/AP_Mount/SoloGimbalEKF.o
+%% libraries/AP_Mount/AP_Mount_Alexmos.o
+%% libraries/AP_Mount/AP_Mount_SToRM32.o
+%% libraries/AP_Mount/AP_Mount.o
+%% libraries/AP_Mount/SoloGimbal.o
+%% libraries/AP_Mount/SoloGimbal_Parameters.o
+%% libraries/AP_Mount/AP_Mount_SoloGimbal.o
+%% libraries/AP_Mount/AP_Mount_Servo.o
+%% libraries/AP_Mount/AP_Mount_SToRM32_serial.o
+%% libraries/AP_Declination/AP_Declination.o
+%% libraries/DataFlash/LogFile.o
+%% libraries/DataFlash/DataFlash_SITL.o
+%% libraries/DataFlash/DFMessageWriter.o
+%% libraries/DataFlash/DataFlash.o
+%% libraries/DataFlash/DataFlash_Block.o
+%% libraries/DataFlash/DataFlash_MAVLink.o
+%% libraries/DataFlash/DataFlash_Backend.o
+%% libraries/DataFlash/DataFlash_File.o
+%% libraries/AP_Scheduler/AP_Scheduler.o
+%% libraries/AP_L1_Control/AP_L1_Control.o
+%% libraries/AP_RCMapper/AP_RCMapper.o
+%% libraries/AP_TECS/AP_TECS.o
+%% libraries/AP_NavEKF/AP_NavEKF.o
+%% libraries/AP_NavEKF/AP_NavEKF_core.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_Outputs.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_Measurements.o
+%% libraries/AP_NavEKF2/AP_NavEKF2.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_OptFlowFusion.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_core.o
+%% libraries/AP_NavEKF2/AP_NavEKF_GyroBias.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_MagFusion.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_VehicleStatus.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_PosVelFusion.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_AirDataFusion.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_Control.o
+%% libraries/AP_Mission/AP_Mission.o
+%% libraries/AP_Notify/Display_SSD1306_I2C.o
+%% libraries/AP_Notify/ToneAlarm_PX4.o
+%% libraries/AP_Notify/ExternalLED.o
+%% libraries/AP_Notify/ToneAlarm_PX4_Solo.o
+%% libraries/AP_Notify/NavioLED_I2C.o
+%% libraries/AP_Notify/ToshibaLED.o
+%% libraries/AP_Notify/NavioLED.o
+%% libraries/AP_Notify/OreoLED_PX4.o
+%% libraries/AP_Notify/Buzzer.o
+%% libraries/AP_Notify/Display.o
+%% libraries/AP_Notify/AP_BoardLED.o
+%% libraries/AP_Notify/ToshibaLED_PX4.o
+%% libraries/AP_Notify/VRBoard_LED.o
+%% libraries/AP_Notify/DiscreteRGBLed.o
+%% libraries/AP_Notify/AP_Notify.o
+%% libraries/AP_Notify/RGBLed.o
+%% libraries/AP_Notify/ToshibaLED_I2C.o
+%% libraries/AP_Notify/RCOutputRGBLed.o
+%% libraries/AP_Notify/ToneAlarm_Linux.o
+%% libraries/AP_BattMonitor/AP_BattMonitor_Backend.o
+%% libraries/AP_BattMonitor/AP_BattMonitor_Bebop.o
+%% libraries/AP_BattMonitor/AP_BattMonitor_SMBus_I2C.o
+%% libraries/AP_BattMonitor/AP_BattMonitor_Analog.o
+%% libraries/AP_BattMonitor/AP_BattMonitor.o
+%% libraries/AP_BattMonitor/AP_BattMonitor_SMBus_PX4.o
+%% libraries/AP_Arming/AP_Arming.o
+%% libraries/AP_BoardConfig/px4_drivers.o
+%% libraries/AP_BoardConfig/AP_BoardConfig.o
+%% libraries/AP_Frsky_Telem/AP_Frsky_Telem.o
+%% libraries/AP_ServoRelayEvents/AP_ServoRelayEvents.o
+%% libraries/AP_Rally/AP_Rally.o
+%% libraries/AP_OpticalFlow/AP_OpticalFlow_HIL.o
+%% libraries/AP_OpticalFlow/AP_OpticalFlow_Linux.o
+%% libraries/AP_OpticalFlow/AP_OpticalFlow_PX4.o
+%% libraries/AP_OpticalFlow/OpticalFlow_backend.o
+%% libraries/AP_OpticalFlow/OpticalFlow.o
+%% libraries/AP_OpticalFlow/AP_OpticalFlow_Onboard.o
+%% libraries/AP_RSSI/AP_RSSI.o
+%% libraries/AP_RPM/RPM_Backend.o
+%% libraries/AP_RPM/RPM_PX4_PWM.o
+%% libraries/AP_RPM/AP_RPM.o
+%% libraries/AP_RPM/RPM_SITL.o
+%% libraries/AP_Parachute/AP_Parachute.o
+%% libraries/AP_ADSB/AP_ADSB.o
+%% libraries/AP_Avoidance/AP_Avoidance.o
+%% libraries/AP_Motors/AP_MotorsY6.o
+%% libraries/AP_Motors/AP_MotorsTri.o
+%% libraries/AP_Motors/AP_MotorsMulticopter.o
+%% libraries/AP_Motors/AP_MotorsHeli_RSC.o
+%% libraries/AP_Motors/AP_MotorsSingle.o
+%% libraries/AP_Motors/AP_MotorsOcta.o
+%% libraries/AP_Motors/AP_MotorsHexa.o
+%% libraries/AP_Motors/AP_MotorsQuad.o
+%% libraries/AP_Motors/AP_MotorsMatrix.o
+%% libraries/AP_Motors/AP_MotorsHeli_Single.o
+%% libraries/AP_Motors/AP_Motors_Class.o
+%% libraries/AP_Motors/AP_MotorsOctaQuad.o
+%% libraries/AP_Motors/AP_MotorsHeli.o
+%% libraries/AP_Motors/AP_MotorsCoax.o
+%% libraries/AC_AttitudeControl/AC_AttitudeControl_Multi.o
+%% libraries/AC_AttitudeControl/AC_PosControl.o
+%% libraries/AC_AttitudeControl/ControlMonitor.o
+%% libraries/AC_AttitudeControl/AC_AttitudeControl.o
+%% libraries/AC_AttitudeControl/AC_AttitudeControl_Heli.o
+%% libraries/AC_PID/AC_HELI_PID.o
+%% libraries/AC_PID/AC_PI_2D.o
+%% libraries/AC_PID/AC_PID.o
+%% libraries/AC_PID/AC_P.o
+%% libraries/AP_InertialNav/AP_InertialNav_NavEKF.o
+%% libraries/AC_WPNav/AC_WPNav.o
+%% libraries/AC_WPNav/AC_Circle.o
+%% libraries/AC_Fence/AC_PolyFence_loader.o
+%% libraries/AC_Fence/AC_Fence.o
+%% libraries/AC_Avoidance/AC_Avoid.o
+%% libraries/AP_Tuning/AP_Tuning.o
+%% libraries/AP_Module/AP_Module.o
+%% libraries/AP_Button/AP_Button.o
+%% libraries/AP_ICEngine/AP_ICEngine.o
+%% libraries/AP_HAL/UARTDriver.o
+%% libraries/AP_HAL/HAL.o
+%% libraries/AP_HAL/Util.o
+%% libraries/AP_HAL_Empty/GPIO.o
+%% libraries/AP_HAL_Empty/Semaphores.o
+%% libraries/AP_HAL_Empty/UARTDriver.o
+%% libraries/AP_HAL_Empty/Storage.o
+%% libraries/AP_HAL_Empty/PrivateMember.o
+%% libraries/AP_HAL_Empty/RCOutput.o
+%% libraries/AP_HAL_Empty/Scheduler.o
+%% libraries/AP_HAL_Empty/AnalogIn.o
+%% libraries/AP_HAL_Empty/RCInput.o
+%% libraries/AP_HAL_Empty/HAL_Empty_Class.o
+%% libraries/AP_HAL_SITL/GPIO.o
+%% libraries/AP_HAL_SITL/SITL_State.o
+%% libraries/AP_HAL_SITL/Semaphores.o
+%% libraries/AP_HAL_SITL/UARTDriver.o
+%% libraries/AP_HAL_SITL/Storage.o
+%% libraries/AP_HAL_SITL/SITL_cmdline.o
+%% libraries/AP_HAL_SITL/HAL_SITL_Class.o
+%% libraries/AP_HAL_SITL/RCOutput.o
+%% libraries/AP_HAL_SITL/sitl_ins.o
+%% libraries/AP_HAL_SITL/Scheduler.o
+%% libraries/AP_HAL_SITL/system.o
+%% libraries/AP_HAL_SITL/sitl_gps.o
+%% libraries/AP_HAL_SITL/sitl_compass.o
+%% libraries/AP_HAL_SITL/AnalogIn.o
+%% libraries/AP_HAL_SITL/sitl_barometer.o
+%% libraries/AP_HAL_SITL/RCInput.o
+%% libraries/AP_HAL_SITL/sitl_optical_flow.o
+%% libraries/SITL/SIM_Helicopter.o
+%% libraries/SITL/SIM_ADSB.o
+%% libraries/SITL/SIM_XPlane.o
+%% libraries/SITL/SIM_last_letter.o
+%% libraries/SITL/SIM_Motor.o
+%% libraries/SITL/SIM_Multicopter.o
+%% libraries/SITL/SIM_SingleCopter.o
+%% libraries/SITL/SIM_Tracker.o
+%% libraries/SITL/SIM_Calibration.o
+%% libraries/SITL/SIM_Rover.o
+%% libraries/SITL/SIM_Balloon.o
+%% libraries/SITL/SITL.o
+%% libraries/SITL/SIM_Aircraft.o
+%% libraries/SITL/SIM_JSBSim.o
+%% libraries/SITL/SIM_Gimbal.o
+%% libraries/SITL/SIM_Plane.o
+%% libraries/SITL/SIM_CRRCSim.o
+%% libraries/SITL/SIM_FlightAxis.o
+%% libraries/SITL/SIM_ICEngine.o
+%% libraries/SITL/SIM_Gazebo.o
+%% libraries/SITL/SIM_Frame.o
+%% libraries/SITL/SIM_QuadPlane.o
+%% libraries/AP_HAL/utility/Socket.o
+%% libraries/AP_HAL/utility/utoa_invert.o
+%% libraries/AP_HAL/utility/Print.o
+%% libraries/AP_HAL/utility/dsm.o
+%% libraries/AP_HAL/utility/print_vprintf.o
+%% libraries/AP_HAL/utility/RingBuffer.o
+%% libraries/AP_HAL/utility/getopt_cpp.o
+%% libraries/AP_HAL/utility/ftoa_engine.o
+Building /tmp/ArduPlane.build/ArduPlane.elf
+%% ArduPlane.elf
+Firmware is in ArduPlane.elf
+make[1]: Leaving directory '/home/juvinski/Projetos/AgroRaptor/ardupilot/ArduPlane'
+/usr/bin/make -C ArduCopter sitl
+make[1]: Entering directory '/home/juvinski/Projetos/AgroRaptor/ardupilot/ArduCopter'
+Checking modules
+// BUILDROOT=/tmp/ArduCopter.build HAL_BOARD=HAL_BOARD_SITL HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE TOOLCHAIN=NATIVE EXTRAFLAGS=-DGIT_VERSION="22b5c415" -I/home/juvinski/Projetos/AgroRaptor/ardupilot/libraries/AP_Common/missing -DMAVLINK_PROTOCOL_VERSION=2 -DHAVE_CMATH_ISFINITE -DNEED_CMATH_ISFINITE_STD_NAMESPACE -DHAVE_ENDIAN_H -DHAVE_BYTESWAP_H
+echo "Generating MAVLink headers..."
+Generating MAVLink headers...
+#goto mavlink module directory and run the most recent generator script
+echo "Generating C code using mavgen.py located at" /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/
+Generating C code using mavgen.py located at /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/
+PYTHONPATH=/home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/ python /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink//pymavlink/tools/mavgen.py --lang=C --wire-protocol=2.0 --output=/tmp/ArduCopter.build/libraries/GCS_MAVLink/include/mavlink/v2.0 /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/ardupilotmega.xml
+Validating /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/ardupilotmega.xml
+Parsing /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/ardupilotmega.xml
+Note: message DATA64 is longer than 64 bytes long (74 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message DATA96 is longer than 64 bytes long (106 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message REMOTE_LOG_DATA_BLOCK is longer than 64 bytes long (214 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Validating /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/common.xml
+Parsing /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/common.xml
+Note: message GPS_STATUS is longer than 64 bytes long (109 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message ATTITUDE_QUATERNION_COV is longer than 64 bytes long (76 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message GLOBAL_POSITION_INT_COV is longer than 64 bytes long (193 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message LOCAL_POSITION_NED_COV is longer than 64 bytes long (237 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message HIGHRES_IMU is longer than 64 bytes long (70 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message HIL_SENSOR is longer than 64 bytes long (72 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message SIM_STATE is longer than 64 bytes long (92 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message FILE_TRANSFER_PROTOCOL is longer than 64 bytes long (262 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message HIL_STATE_QUATERNION is longer than 64 bytes long (72 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message LOG_DATA is longer than 64 bytes long (105 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message GPS_INJECT_DATA is longer than 64 bytes long (121 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message SERIAL_CONTROL is longer than 64 bytes long (87 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message ENCAPSULATED_DATA is longer than 64 bytes long (263 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message RESOURCE_REQUEST is longer than 64 bytes long (251 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message FOLLOW_TARGET is longer than 64 bytes long (101 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message CONTROL_SYSTEM_STATE is longer than 64 bytes long (108 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message AUTOPILOT_VERSION is longer than 64 bytes long (68 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message GPS_INPUT is longer than 64 bytes long (71 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message GPS_RTCM_DATA is longer than 64 bytes long (190 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message V2_EXTENSION is longer than 64 bytes long (262 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Validating /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/uAvionix.xml
+Parsing /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/uAvionix.xml
+Merged enum MAV_CMD
+Found 189 MAVLink message types in 3 XML files
+Generating C implementation in directory /tmp/ArduCopter.build/libraries/GCS_MAVLink/include/mavlink/v2.0/ardupilotmega
+Generating C implementation in directory /tmp/ArduCopter.build/libraries/GCS_MAVLink/include/mavlink/v2.0/common
+Generating C implementation in directory /tmp/ArduCopter.build/libraries/GCS_MAVLink/include/mavlink/v2.0/uAvionix
+Copying fixed headers for protocol 2.0 to /tmp/ArduCopter.build/libraries/GCS_MAVLink/include/mavlink/v2.0
+%% Parameters.o
+%% control_poshold.o
+%% control_circle.o
+%% motor_test.o
+%% arming_checks.o
+%% control_throw.o
+%% motors.o
+%% navigation.o
+%% sensors.o
+%% heli.o
+%% commands_logic.o
+%% events.o
+%% control_avoid_adsb.o
+%% Attitude.o
+%% compassmot.o
+%% control_guided.o
+%% precision_landing.o
+%% inertia.o
+%% setup.o
+%% avoidance_adsb.o
+%% control_guided_nogps.o
+%% terrain.o
+%% esc_calibration.o
+%% UserCode.o
+%% takeoff.o
+%% crash_check.o
+%% perf_info.o
+%% heli_control_stabilize.o
+%% failsafe.o
+%% fence.o
+%% GCS_Mavlink.o
+%% control_autotune.o
+%% land_detector.o
+%% AP_State.o
+%% control_stabilize.o
+%% Copter.o
+%% control_acro.o
+%% Log.o
+%% heli_control_acro.o
+%% position_vector.o
+%% control_brake.o
+%% control_sport.o
+%% switches.o
+%% radio.o
+%% leds.o
+%% control_althold.o
+%% afs_copter.o
+%% system.o
+%% control_land.o
+%% commands.o
+%% landing_gear.o
+%% capabilities.o
+%% AP_Rally.o
+%% ekf_check.o
+%% control_auto.o
+%% compat.o
+%% baro_ground_effect.o
+%% control_flip.o
+%% test.o
+%% control_loiter.o
+%% flight_mode.o
+%% ArduCopter.o
+%% control_drift.o
+%% tuning.o
+%% control_rtl.o
+%% libraries/AP_Common/AP_Common.o
+%% libraries/AP_Common/c++.o
+%% libraries/AP_Common/Location.o
+%% libraries/AP_Menu/AP_Menu.o
+%% libraries/AP_Param/AP_Param.o
+%% libraries/StorageManager/StorageManager.o
+%% libraries/GCS_MAVLink/GCS_Common.o
+%% libraries/GCS_MAVLink/GCS_Signing.o
+%% libraries/GCS_MAVLink/GCS_serial_control.o
+%% libraries/GCS_MAVLink/GCS_Logs.o
+%% libraries/GCS_MAVLink/MAVLink_routing.o
+%% libraries/GCS_MAVLink/GCS_MAVLink.o
+%% libraries/AP_SerialManager/AP_SerialManager.o
+%% libraries/AP_GPS/AP_GPS_SBF.o
+%% libraries/AP_GPS/AP_GPS_ERB.o
+%% libraries/AP_GPS/AP_GPS_UBLOX.o
+%% libraries/AP_GPS/AP_GPS_NMEA.o
+%% libraries/AP_GPS/AP_GPS_SIRF.o
+%% libraries/AP_GPS/AP_GPS_SBP.o
+%% libraries/AP_GPS/AP_GPS.o
+%% libraries/AP_GPS/AP_GPS_GSOF.o
+%% libraries/AP_GPS/AP_GPS_MTK19.o
+%% libraries/AP_GPS/AP_GPS_MAV.o
+%% libraries/AP_GPS/GPS_Backend.o
+%% libraries/AP_GPS/AP_GPS_QURT.o
+%% libraries/AP_GPS/AP_GPS_MTK.o
+%% libraries/AP_GPS/AP_GPS_PX4.o
+%% libraries/DataFlash/LogFile.o
+%% libraries/DataFlash/DataFlash_SITL.o
+%% libraries/DataFlash/DFMessageWriter.o
+%% libraries/DataFlash/DataFlash.o
+%% libraries/DataFlash/DataFlash_Block.o
+%% libraries/DataFlash/DataFlash_MAVLink.o
+%% libraries/DataFlash/DataFlash_Backend.o
+%% libraries/DataFlash/DataFlash_File.o
+%% libraries/AP_ADC/AP_ADC.o
+%% libraries/AP_ADC/AP_ADC_ADS1115.o
+%% libraries/AP_Baro/AP_Baro.o
+%% libraries/AP_Baro/AP_Baro_qflight.o
+%% libraries/AP_Baro/AP_Baro_HIL.o
+%% libraries/AP_Baro/AP_Baro_PX4.o
+%% libraries/AP_Baro/AP_Baro_MS5611.o
+%% libraries/AP_Baro/AP_Baro_QURT.o
+%% libraries/AP_Baro/AP_Baro_Backend.o
+%% libraries/AP_Baro/AP_Baro_BMP085.o
+%% libraries/AP_Compass/AP_Compass_Calibration.o
+%% libraries/AP_Compass/Compass_learn.o
+%% libraries/AP_Compass/AP_Compass_HIL.o
+%% libraries/AP_Compass/AP_Compass_qflight.o
+%% libraries/AP_Compass/AP_Compass.o
+%% libraries/AP_Compass/AP_Compass_BMM150.o
+%% libraries/AP_Compass/AP_Compass_HMC5843.o
+%% libraries/AP_Compass/AP_Compass_PX4.o
+%% libraries/AP_Compass/AP_Compass_QURT.o
+%% libraries/AP_Compass/AP_Compass_Backend.o
+%% libraries/AP_Compass/CompassCalibrator.o
+%% libraries/AP_Compass/AP_Compass_LSM9DS1.o
+%% libraries/AP_Compass/AP_Compass_AK8963.o
+%% libraries/AP_Compass/AP_Compass_LSM303D.o
+%% libraries/AP_Math/quaternion.o
+%% libraries/AP_Math/AP_GeodesicGrid.o
+%% libraries/AP_Math/vector2.o
+%% libraries/AP_Math/polygon.o
+%% libraries/AP_Math/matrix3.o
+%% libraries/AP_Math/matrix_alg.o
+%% libraries/AP_Math/edc.o
+%% libraries/AP_Math/AP_Math.o
+%% libraries/AP_Math/vector3.o
+%% libraries/AP_Math/location.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_SITL.o
+%% libraries/AP_InertialSensor/AuxiliaryBus.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_Backend.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_HIL.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_MPU9250.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_MPU6000.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_Stream.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_BMI160.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_L3G4200D.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_QURT.o
+%% libraries/AP_InertialSensor/AP_InertialSensor.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_qflight.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_MAVLink.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_LSM9DS0.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_PX4.o
+%% libraries/AP_AccelCal/AccelCalibrator.o
+%% libraries/AP_AccelCal/AP_AccelCal.o
+%% libraries/AP_AHRS/AP_AHRS_DCM.o
+%% libraries/AP_AHRS/AP_AHRS.o
+%% libraries/AP_AHRS/AP_AHRS_NavEKF.o
+%% libraries/AP_NavEKF/AP_NavEKF.o
+%% libraries/AP_NavEKF/AP_NavEKF_core.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_Outputs.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_Measurements.o
+%% libraries/AP_NavEKF2/AP_NavEKF2.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_OptFlowFusion.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_core.o
+%% libraries/AP_NavEKF2/AP_NavEKF_GyroBias.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_MagFusion.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_VehicleStatus.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_PosVelFusion.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_AirDataFusion.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_Control.o
+%% libraries/AP_Mission/AP_Mission.o
+%% libraries/AP_Rally/AP_Rally.o
+%% libraries/AC_PID/AC_HELI_PID.o
+%% libraries/AC_PID/AC_PI_2D.o
+%% libraries/AC_PID/AC_PID.o
+%% libraries/AC_PID/AC_P.o
+%% libraries/AC_AttitudeControl/AC_AttitudeControl_Multi.o
+%% libraries/AC_AttitudeControl/AC_PosControl.o
+%% libraries/AC_AttitudeControl/ControlMonitor.o
+%% libraries/AC_AttitudeControl/AC_AttitudeControl.o
+%% libraries/AC_AttitudeControl/AC_AttitudeControl_Heli.o
+%% libraries/RC_Channel/RC_Channel.o
+%% libraries/RC_Channel/RC_Channel_aux.o
+%% libraries/AP_Motors/AP_MotorsY6.o
+%% libraries/AP_Motors/AP_MotorsTri.o
+%% libraries/AP_Motors/AP_MotorsMulticopter.o
+%% libraries/AP_Motors/AP_MotorsHeli_RSC.o
+%% libraries/AP_Motors/AP_MotorsSingle.o
+%% libraries/AP_Motors/AP_MotorsOcta.o
+%% libraries/AP_Motors/AP_MotorsHexa.o
+%% libraries/AP_Motors/AP_MotorsQuad.o
+%% libraries/AP_Motors/AP_MotorsMatrix.o
+%% libraries/AP_Motors/AP_MotorsHeli_Single.o
+%% libraries/AP_Motors/AP_Motors_Class.o
+%% libraries/AP_Motors/AP_MotorsOctaQuad.o
+%% libraries/AP_Motors/AP_MotorsHeli.o
+%% libraries/AP_Motors/AP_MotorsCoax.o
+%% libraries/AP_RangeFinder/RangeFinder.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_Bebop.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_PX4_PWM.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_LightWareI2C.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_PulsedLightLRF.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_analog.o
+%% libraries/AP_RangeFinder/RangeFinder_Backend.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarI2CXL.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_BBB_PRU.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_LightWareSerial.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_PX4.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_MAVLink.o
+%% libraries/AP_OpticalFlow/AP_OpticalFlow_HIL.o
+%% libraries/AP_OpticalFlow/AP_OpticalFlow_Linux.o
+%% libraries/AP_OpticalFlow/AP_OpticalFlow_PX4.o
+%% libraries/AP_OpticalFlow/OpticalFlow_backend.o
+%% libraries/AP_OpticalFlow/OpticalFlow.o
+%% libraries/AP_OpticalFlow/AP_OpticalFlow_Onboard.o
+%% libraries/AP_RSSI/AP_RSSI.o
+%% libraries/Filter/LowPassFilter.o
+%% libraries/Filter/LowPassFilter2p.o
+%% libraries/Filter/DerivativeFilter.o
+%% libraries/AP_Relay/AP_Relay.o
+%% libraries/AP_ServoRelayEvents/AP_ServoRelayEvents.o
+%% libraries/AP_Camera/AP_Camera.o
+%% libraries/AP_Mount/AP_Mount_Backend.o
+%% libraries/AP_Mount/SoloGimbalEKF.o
+%% libraries/AP_Mount/AP_Mount_Alexmos.o
+%% libraries/AP_Mount/AP_Mount_SToRM32.o
+%% libraries/AP_Mount/AP_Mount.o
+%% libraries/AP_Mount/SoloGimbal.o
+%% libraries/AP_Mount/SoloGimbal_Parameters.o
+%% libraries/AP_Mount/AP_Mount_SoloGimbal.o
+%% libraries/AP_Mount/AP_Mount_Servo.o
+%% libraries/AP_Mount/AP_Mount_SToRM32_serial.o
+%% libraries/AP_Airspeed/AP_Airspeed_I2C.o
+%% libraries/AP_Airspeed/Airspeed_Calibration.o
+%% libraries/AP_Airspeed/AP_Airspeed_analog.o
+%% libraries/AP_Airspeed/AP_Airspeed.o
+%% libraries/AP_Airspeed/AP_Airspeed_PX4.o
+%% libraries/AP_InertialNav/AP_InertialNav_NavEKF.o
+%% libraries/AC_WPNav/AC_WPNav.o
+%% libraries/AC_WPNav/AC_Circle.o
+%% libraries/AP_Declination/AP_Declination.o
+%% libraries/AC_Fence/AC_PolyFence_loader.o
+%% libraries/AC_Fence/AC_Fence.o
+%% libraries/AC_Avoidance/AC_Avoid.o
+%% libraries/AP_Scheduler/AP_Scheduler.o
+%% libraries/AP_RCMapper/AP_RCMapper.o
+%% libraries/AP_Notify/Display_SSD1306_I2C.o
+%% libraries/AP_Notify/ToneAlarm_PX4.o
+%% libraries/AP_Notify/ExternalLED.o
+%% libraries/AP_Notify/ToneAlarm_PX4_Solo.o
+%% libraries/AP_Notify/NavioLED_I2C.o
+%% libraries/AP_Notify/ToshibaLED.o
+%% libraries/AP_Notify/NavioLED.o
+%% libraries/AP_Notify/OreoLED_PX4.o
+%% libraries/AP_Notify/Buzzer.o
+%% libraries/AP_Notify/Display.o
+%% libraries/AP_Notify/AP_BoardLED.o
+%% libraries/AP_Notify/ToshibaLED_PX4.o
+%% libraries/AP_Notify/VRBoard_LED.o
+%% libraries/AP_Notify/DiscreteRGBLed.o
+%% libraries/AP_Notify/AP_Notify.o
+%% libraries/AP_Notify/RGBLed.o
+%% libraries/AP_Notify/ToshibaLED_I2C.o
+%% libraries/AP_Notify/RCOutputRGBLed.o
+%% libraries/AP_Notify/ToneAlarm_Linux.o
+%% libraries/AP_BattMonitor/AP_BattMonitor_Backend.o
+%% libraries/AP_BattMonitor/AP_BattMonitor_Bebop.o
+%% libraries/AP_BattMonitor/AP_BattMonitor_SMBus_I2C.o
+%% libraries/AP_BattMonitor/AP_BattMonitor_Analog.o
+%% libraries/AP_BattMonitor/AP_BattMonitor.o
+%% libraries/AP_BattMonitor/AP_BattMonitor_SMBus_PX4.o
+%% libraries/AP_BoardConfig/px4_drivers.o
+%% libraries/AP_BoardConfig/AP_BoardConfig.o
+%% libraries/AP_Frsky_Telem/AP_Frsky_Telem.o
+%% libraries/AC_Sprayer/AC_Sprayer.o
+%% libraries/AP_EPM/AP_EPM.o
+%% libraries/AP_Parachute/AP_Parachute.o
+%% libraries/AP_LandingGear/AP_LandingGear.o
+%% libraries/AP_Terrain/TerrainIO.o
+%% libraries/AP_Terrain/TerrainMission.o
+%% libraries/AP_Terrain/TerrainGCS.o
+%% libraries/AP_Terrain/AP_Terrain.o
+%% libraries/AP_Terrain/TerrainUtil.o
+%% libraries/AP_RPM/RPM_Backend.o
+%% libraries/AP_RPM/RPM_PX4_PWM.o
+%% libraries/AP_RPM/AP_RPM.o
+%% libraries/AP_RPM/RPM_SITL.o
+%% libraries/AC_PrecLand/AC_PrecLand_Companion.o
+%% libraries/AC_PrecLand/AC_PrecLand_IRLock.o
+%% libraries/AC_PrecLand/AC_PrecLand.o
+%% libraries/AP_IRLock/AP_IRLock_PX4.o
+%% libraries/AP_IRLock/IRLock.o
+%% libraries/AC_InputManager/AC_InputManager.o
+%% libraries/AC_InputManager/AC_InputManager_Heli.o
+%% libraries/AP_ADSB/AP_ADSB.o
+%% libraries/AP_Avoidance/AP_Avoidance.o
+%% libraries/AP_Module/AP_Module.o
+%% libraries/AP_Button/AP_Button.o
+%% libraries/AP_ICEngine/AP_ICEngine.o
+%% libraries/AP_HAL/UARTDriver.o
+%% libraries/AP_HAL/HAL.o
+%% libraries/AP_HAL/Util.o
+%% libraries/AP_HAL_Empty/GPIO.o
+%% libraries/AP_HAL_Empty/Semaphores.o
+%% libraries/AP_HAL_Empty/UARTDriver.o
+%% libraries/AP_HAL_Empty/Storage.o
+%% libraries/AP_HAL_Empty/PrivateMember.o
+%% libraries/AP_HAL_Empty/RCOutput.o
+%% libraries/AP_HAL_Empty/Scheduler.o
+%% libraries/AP_HAL_Empty/AnalogIn.o
+%% libraries/AP_HAL_Empty/RCInput.o
+%% libraries/AP_HAL_Empty/HAL_Empty_Class.o
+%% libraries/AP_HAL_SITL/GPIO.o
+%% libraries/AP_HAL_SITL/SITL_State.o
+%% libraries/AP_HAL_SITL/Semaphores.o
+%% libraries/AP_HAL_SITL/UARTDriver.o
+%% libraries/AP_HAL_SITL/Storage.o
+%% libraries/AP_HAL_SITL/SITL_cmdline.o
+%% libraries/AP_HAL_SITL/HAL_SITL_Class.o
+%% libraries/AP_HAL_SITL/RCOutput.o
+%% libraries/AP_HAL_SITL/sitl_ins.o
+%% libraries/AP_HAL_SITL/Scheduler.o
+%% libraries/AP_HAL_SITL/system.o
+%% libraries/AP_HAL_SITL/sitl_gps.o
+%% libraries/AP_HAL_SITL/sitl_compass.o
+%% libraries/AP_HAL_SITL/AnalogIn.o
+%% libraries/AP_HAL_SITL/sitl_barometer.o
+%% libraries/AP_HAL_SITL/RCInput.o
+%% libraries/AP_HAL_SITL/sitl_optical_flow.o
+%% libraries/SITL/SIM_Helicopter.o
+%% libraries/SITL/SIM_ADSB.o
+%% libraries/SITL/SIM_XPlane.o
+%% libraries/SITL/SIM_last_letter.o
+%% libraries/SITL/SIM_Motor.o
+%% libraries/SITL/SIM_Multicopter.o
+%% libraries/SITL/SIM_SingleCopter.o
+%% libraries/SITL/SIM_Tracker.o
+%% libraries/SITL/SIM_Calibration.o
+%% libraries/SITL/SIM_Rover.o
+%% libraries/SITL/SIM_Balloon.o
+%% libraries/SITL/SITL.o
+%% libraries/SITL/SIM_Aircraft.o
+%% libraries/SITL/SIM_JSBSim.o
+%% libraries/SITL/SIM_Gimbal.o
+%% libraries/SITL/SIM_Plane.o
+%% libraries/SITL/SIM_CRRCSim.o
+%% libraries/SITL/SIM_FlightAxis.o
+%% libraries/SITL/SIM_ICEngine.o
+%% libraries/SITL/SIM_Gazebo.o
+%% libraries/SITL/SIM_Frame.o
+%% libraries/SITL/SIM_QuadPlane.o
+%% libraries/AP_HAL/utility/Socket.o
+%% libraries/AP_HAL/utility/utoa_invert.o
+%% libraries/AP_HAL/utility/Print.o
+%% libraries/AP_HAL/utility/dsm.o
+%% libraries/AP_HAL/utility/print_vprintf.o
+%% libraries/AP_HAL/utility/RingBuffer.o
+%% libraries/AP_HAL/utility/getopt_cpp.o
+%% libraries/AP_HAL/utility/ftoa_engine.o
+Building /tmp/ArduCopter.build/ArduCopter.elf
+%% ArduCopter.elf
+Firmware is in ArduCopter.elf
+make[1]: Leaving directory '/home/juvinski/Projetos/AgroRaptor/ardupilot/ArduCopter'
+/usr/bin/make -C APMrover2 sitl
+make[1]: Entering directory '/home/juvinski/Projetos/AgroRaptor/ardupilot/APMrover2'
+Checking modules
+// BUILDROOT=/tmp/APMrover2.build HAL_BOARD=HAL_BOARD_SITL HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE TOOLCHAIN=NATIVE EXTRAFLAGS=-DGIT_VERSION="22b5c415" -I/home/juvinski/Projetos/AgroRaptor/ardupilot/libraries/AP_Common/missing -DMAVLINK_PROTOCOL_VERSION=2 -DHAVE_CMATH_ISFINITE -DNEED_CMATH_ISFINITE_STD_NAMESPACE -DHAVE_ENDIAN_H -DHAVE_BYTESWAP_H
+echo "Generating MAVLink headers..."
+Generating MAVLink headers...
+#goto mavlink module directory and run the most recent generator script
+echo "Generating C code using mavgen.py located at" /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/
+Generating C code using mavgen.py located at /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/
+PYTHONPATH=/home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/ python /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink//pymavlink/tools/mavgen.py --lang=C --wire-protocol=2.0 --output=/tmp/APMrover2.build/libraries/GCS_MAVLink/include/mavlink/v2.0 /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/ardupilotmega.xml
+Validating /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/ardupilotmega.xml
+Parsing /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/ardupilotmega.xml
+Note: message DATA64 is longer than 64 bytes long (74 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message DATA96 is longer than 64 bytes long (106 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message REMOTE_LOG_DATA_BLOCK is longer than 64 bytes long (214 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Validating /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/common.xml
+Parsing /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/common.xml
+Note: message GPS_STATUS is longer than 64 bytes long (109 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message ATTITUDE_QUATERNION_COV is longer than 64 bytes long (76 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message GLOBAL_POSITION_INT_COV is longer than 64 bytes long (193 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message LOCAL_POSITION_NED_COV is longer than 64 bytes long (237 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message HIGHRES_IMU is longer than 64 bytes long (70 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message HIL_SENSOR is longer than 64 bytes long (72 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message SIM_STATE is longer than 64 bytes long (92 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message FILE_TRANSFER_PROTOCOL is longer than 64 bytes long (262 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message HIL_STATE_QUATERNION is longer than 64 bytes long (72 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message LOG_DATA is longer than 64 bytes long (105 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message GPS_INJECT_DATA is longer than 64 bytes long (121 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message SERIAL_CONTROL is longer than 64 bytes long (87 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message ENCAPSULATED_DATA is longer than 64 bytes long (263 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message RESOURCE_REQUEST is longer than 64 bytes long (251 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message FOLLOW_TARGET is longer than 64 bytes long (101 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message CONTROL_SYSTEM_STATE is longer than 64 bytes long (108 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message AUTOPILOT_VERSION is longer than 64 bytes long (68 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message GPS_INPUT is longer than 64 bytes long (71 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message GPS_RTCM_DATA is longer than 64 bytes long (190 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message V2_EXTENSION is longer than 64 bytes long (262 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Validating /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/uAvionix.xml
+Parsing /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/uAvionix.xml
+Merged enum MAV_CMD
+Found 189 MAVLink message types in 3 XML files
+Generating C implementation in directory /tmp/APMrover2.build/libraries/GCS_MAVLink/include/mavlink/v2.0/ardupilotmega
+Generating C implementation in directory /tmp/APMrover2.build/libraries/GCS_MAVLink/include/mavlink/v2.0/common
+Generating C implementation in directory /tmp/APMrover2.build/libraries/GCS_MAVLink/include/mavlink/v2.0/uAvionix
+Copying fixed headers for protocol 2.0 to /tmp/APMrover2.build/libraries/GCS_MAVLink/include/mavlink/v2.0
+%% control_modes.o
+%% events.o
+%% setup.o
+%% commands_logic.o
+%% Parameters.o
+%% Rover.o
+%% commands_process.o
+%% GCS_Mavlink.o
+%% Log.o
+%% navigation.o
+%% system.o
+%% radio.o
+%% sensors.o
+%% failsafe.o
+%% commands.o
+%% Steering.o
+%% capabilities.o
+%% compat.o
+%% test.o
+%% APMrover2.o
+%% libraries/AP_Common/AP_Common.o
+%% libraries/AP_Common/c++.o
+%% libraries/AP_Common/Location.o
+%% libraries/AP_Menu/AP_Menu.o
+%% libraries/AP_Param/AP_Param.o
+%% libraries/StorageManager/StorageManager.o
+%% libraries/AP_GPS/AP_GPS_SBF.o
+%% libraries/AP_GPS/AP_GPS_ERB.o
+%% libraries/AP_GPS/AP_GPS_UBLOX.o
+%% libraries/AP_GPS/AP_GPS_NMEA.o
+%% libraries/AP_GPS/AP_GPS_SIRF.o
+%% libraries/AP_GPS/AP_GPS_SBP.o
+%% libraries/AP_GPS/AP_GPS.o
+%% libraries/AP_GPS/AP_GPS_GSOF.o
+%% libraries/AP_GPS/AP_GPS_MTK19.o
+%% libraries/AP_GPS/AP_GPS_MAV.o
+%% libraries/AP_GPS/GPS_Backend.o
+%% libraries/AP_GPS/AP_GPS_QURT.o
+%% libraries/AP_GPS/AP_GPS_MTK.o
+%% libraries/AP_GPS/AP_GPS_PX4.o
+%% libraries/AP_ADC/AP_ADC.o
+%% libraries/AP_ADC/AP_ADC_ADS1115.o
+%% libraries/AP_Baro/AP_Baro.o
+%% libraries/AP_Baro/AP_Baro_qflight.o
+%% libraries/AP_Baro/AP_Baro_HIL.o
+%% libraries/AP_Baro/AP_Baro_PX4.o
+%% libraries/AP_Baro/AP_Baro_MS5611.o
+%% libraries/AP_Baro/AP_Baro_QURT.o
+%% libraries/AP_Baro/AP_Baro_Backend.o
+%% libraries/AP_Baro/AP_Baro_BMP085.o
+%% libraries/AP_Compass/AP_Compass_Calibration.o
+%% libraries/AP_Compass/Compass_learn.o
+%% libraries/AP_Compass/AP_Compass_HIL.o
+%% libraries/AP_Compass/AP_Compass_qflight.o
+%% libraries/AP_Compass/AP_Compass.o
+%% libraries/AP_Compass/AP_Compass_BMM150.o
+%% libraries/AP_Compass/AP_Compass_HMC5843.o
+%% libraries/AP_Compass/AP_Compass_PX4.o
+%% libraries/AP_Compass/AP_Compass_QURT.o
+%% libraries/AP_Compass/AP_Compass_Backend.o
+%% libraries/AP_Compass/CompassCalibrator.o
+%% libraries/AP_Compass/AP_Compass_LSM9DS1.o
+%% libraries/AP_Compass/AP_Compass_AK8963.o
+%% libraries/AP_Compass/AP_Compass_LSM303D.o
+%% libraries/AP_Math/quaternion.o
+%% libraries/AP_Math/AP_GeodesicGrid.o
+%% libraries/AP_Math/vector2.o
+%% libraries/AP_Math/polygon.o
+%% libraries/AP_Math/matrix3.o
+%% libraries/AP_Math/matrix_alg.o
+%% libraries/AP_Math/edc.o
+%% libraries/AP_Math/AP_Math.o
+%% libraries/AP_Math/vector3.o
+%% libraries/AP_Math/location.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_SITL.o
+%% libraries/AP_InertialSensor/AuxiliaryBus.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_Backend.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_HIL.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_MPU9250.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_MPU6000.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_Stream.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_BMI160.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_L3G4200D.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_QURT.o
+%% libraries/AP_InertialSensor/AP_InertialSensor.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_qflight.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_MAVLink.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_LSM9DS0.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_PX4.o
+%% libraries/AP_AccelCal/AccelCalibrator.o
+%% libraries/AP_AccelCal/AP_AccelCal.o
+%% libraries/AP_AHRS/AP_AHRS_DCM.o
+%% libraries/AP_AHRS/AP_AHRS.o
+%% libraries/AP_AHRS/AP_AHRS_NavEKF.o
+%% libraries/AP_NavEKF/AP_NavEKF.o
+%% libraries/AP_NavEKF/AP_NavEKF_core.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_Outputs.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_Measurements.o
+%% libraries/AP_NavEKF2/AP_NavEKF2.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_OptFlowFusion.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_core.o
+%% libraries/AP_NavEKF2/AP_NavEKF_GyroBias.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_MagFusion.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_VehicleStatus.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_PosVelFusion.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_AirDataFusion.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_Control.o
+%% libraries/AP_Mission/AP_Mission.o
+%% libraries/AP_Rally/AP_Rally.o
+%% libraries/AP_Terrain/TerrainIO.o
+%% libraries/AP_Terrain/TerrainMission.o
+%% libraries/AP_Terrain/TerrainGCS.o
+%% libraries/AP_Terrain/AP_Terrain.o
+%% libraries/AP_Terrain/TerrainUtil.o
+%% libraries/PID/PID.o
+%% libraries/RC_Channel/RC_Channel.o
+%% libraries/RC_Channel/RC_Channel_aux.o
+%% libraries/AP_RangeFinder/RangeFinder.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_Bebop.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_PX4_PWM.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_LightWareI2C.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_PulsedLightLRF.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_analog.o
+%% libraries/AP_RangeFinder/RangeFinder_Backend.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarI2CXL.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_BBB_PRU.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_LightWareSerial.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_PX4.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_MAVLink.o
+%% libraries/Filter/LowPassFilter.o
+%% libraries/Filter/LowPassFilter2p.o
+%% libraries/Filter/DerivativeFilter.o
+%% libraries/AP_Relay/AP_Relay.o
+%% libraries/AP_ServoRelayEvents/AP_ServoRelayEvents.o
+%% libraries/AP_Mount/AP_Mount_Backend.o
+%% libraries/AP_Mount/SoloGimbalEKF.o
+%% libraries/AP_Mount/AP_Mount_Alexmos.o
+%% libraries/AP_Mount/AP_Mount_SToRM32.o
+%% libraries/AP_Mount/AP_Mount.o
+%% libraries/AP_Mount/SoloGimbal.o
+%% libraries/AP_Mount/SoloGimbal_Parameters.o
+%% libraries/AP_Mount/AP_Mount_SoloGimbal.o
+%% libraries/AP_Mount/AP_Mount_Servo.o
+%% libraries/AP_Mount/AP_Mount_SToRM32_serial.o
+%% libraries/AP_Camera/AP_Camera.o
+%% libraries/GCS_MAVLink/GCS_Common.o
+%% libraries/GCS_MAVLink/GCS_Signing.o
+%% libraries/GCS_MAVLink/GCS_serial_control.o
+%% libraries/GCS_MAVLink/GCS_Logs.o
+%% libraries/GCS_MAVLink/MAVLink_routing.o
+%% libraries/GCS_MAVLink/GCS_MAVLink.o
+%% libraries/AP_SerialManager/AP_SerialManager.o
+%% libraries/AP_Airspeed/AP_Airspeed_I2C.o
+%% libraries/AP_Airspeed/Airspeed_Calibration.o
+%% libraries/AP_Airspeed/AP_Airspeed_analog.o
+%% libraries/AP_Airspeed/AP_Airspeed.o
+%% libraries/AP_Airspeed/AP_Airspeed_PX4.o
+%% libraries/DataFlash/LogFile.o
+%% libraries/DataFlash/DataFlash_SITL.o
+%% libraries/DataFlash/DFMessageWriter.o
+%% libraries/DataFlash/DataFlash.o
+%% libraries/DataFlash/DataFlash_Block.o
+%% libraries/DataFlash/DataFlash_MAVLink.o
+%% libraries/DataFlash/DataFlash_Backend.o
+%% libraries/DataFlash/DataFlash_File.o
+%% libraries/AP_RCMapper/AP_RCMapper.o
+%% libraries/AP_Scheduler/AP_Scheduler.o
+%% libraries/APM_Control/AP_AutoTune.o
+%% libraries/APM_Control/AP_SteerController.o
+%% libraries/APM_Control/AP_YawController.o
+%% libraries/APM_Control/AP_RollController.o
+%% libraries/APM_Control/AP_PitchController.o
+%% libraries/AP_L1_Control/AP_L1_Control.o
+%% libraries/AP_BoardConfig/px4_drivers.o
+%% libraries/AP_BoardConfig/AP_BoardConfig.o
+%% libraries/AP_Frsky_Telem/AP_Frsky_Telem.o
+%% libraries/AP_Notify/Display_SSD1306_I2C.o
+%% libraries/AP_Notify/ToneAlarm_PX4.o
+%% libraries/AP_Notify/ExternalLED.o
+%% libraries/AP_Notify/ToneAlarm_PX4_Solo.o
+%% libraries/AP_Notify/NavioLED_I2C.o
+%% libraries/AP_Notify/ToshibaLED.o
+%% libraries/AP_Notify/NavioLED.o
+%% libraries/AP_Notify/OreoLED_PX4.o
+%% libraries/AP_Notify/Buzzer.o
+%% libraries/AP_Notify/Display.o
+%% libraries/AP_Notify/AP_BoardLED.o
+%% libraries/AP_Notify/ToshibaLED_PX4.o
+%% libraries/AP_Notify/VRBoard_LED.o
+%% libraries/AP_Notify/DiscreteRGBLed.o
+%% libraries/AP_Notify/AP_Notify.o
+%% libraries/AP_Notify/RGBLed.o
+%% libraries/AP_Notify/ToshibaLED_I2C.o
+%% libraries/AP_Notify/RCOutputRGBLed.o
+%% libraries/AP_Notify/ToneAlarm_Linux.o
+%% libraries/AP_BattMonitor/AP_BattMonitor_Backend.o
+%% libraries/AP_BattMonitor/AP_BattMonitor_Bebop.o
+%% libraries/AP_BattMonitor/AP_BattMonitor_SMBus_I2C.o
+%% libraries/AP_BattMonitor/AP_BattMonitor_Analog.o
+%% libraries/AP_BattMonitor/AP_BattMonitor.o
+%% libraries/AP_BattMonitor/AP_BattMonitor_SMBus_PX4.o
+%% libraries/AP_OpticalFlow/AP_OpticalFlow_HIL.o
+%% libraries/AP_OpticalFlow/AP_OpticalFlow_Linux.o
+%% libraries/AP_OpticalFlow/AP_OpticalFlow_PX4.o
+%% libraries/AP_OpticalFlow/OpticalFlow_backend.o
+%% libraries/AP_OpticalFlow/OpticalFlow.o
+%% libraries/AP_OpticalFlow/AP_OpticalFlow_Onboard.o
+%% libraries/AP_RSSI/AP_RSSI.o
+%% libraries/AP_Declination/AP_Declination.o
+%% libraries/AP_RPM/RPM_Backend.o
+%% libraries/AP_RPM/RPM_PX4_PWM.o
+%% libraries/AP_RPM/AP_RPM.o
+%% libraries/AP_RPM/RPM_SITL.o
+%% libraries/AP_Arming/AP_Arming.o
+%% libraries/AP_Module/AP_Module.o
+%% libraries/AP_Button/AP_Button.o
+%% libraries/AP_ICEngine/AP_ICEngine.o
+%% libraries/AP_HAL/UARTDriver.o
+%% libraries/AP_HAL/HAL.o
+%% libraries/AP_HAL/Util.o
+%% libraries/AP_HAL_Empty/GPIO.o
+%% libraries/AP_HAL_Empty/Semaphores.o
+%% libraries/AP_HAL_Empty/UARTDriver.o
+%% libraries/AP_HAL_Empty/Storage.o
+%% libraries/AP_HAL_Empty/PrivateMember.o
+%% libraries/AP_HAL_Empty/RCOutput.o
+%% libraries/AP_HAL_Empty/Scheduler.o
+%% libraries/AP_HAL_Empty/AnalogIn.o
+%% libraries/AP_HAL_Empty/RCInput.o
+%% libraries/AP_HAL_Empty/HAL_Empty_Class.o
+%% libraries/AP_HAL_SITL/GPIO.o
+%% libraries/AP_HAL_SITL/SITL_State.o
+%% libraries/AP_HAL_SITL/Semaphores.o
+%% libraries/AP_HAL_SITL/UARTDriver.o
+%% libraries/AP_HAL_SITL/Storage.o
+%% libraries/AP_HAL_SITL/SITL_cmdline.o
+%% libraries/AP_HAL_SITL/HAL_SITL_Class.o
+%% libraries/AP_HAL_SITL/RCOutput.o
+%% libraries/AP_HAL_SITL/sitl_ins.o
+%% libraries/AP_HAL_SITL/Scheduler.o
+%% libraries/AP_HAL_SITL/system.o
+%% libraries/AP_HAL_SITL/sitl_gps.o
+%% libraries/AP_HAL_SITL/sitl_compass.o
+%% libraries/AP_HAL_SITL/AnalogIn.o
+%% libraries/AP_HAL_SITL/sitl_barometer.o
+%% libraries/AP_HAL_SITL/RCInput.o
+%% libraries/AP_HAL_SITL/sitl_optical_flow.o
+%% libraries/SITL/SIM_Helicopter.o
+%% libraries/SITL/SIM_ADSB.o
+%% libraries/SITL/SIM_XPlane.o
+%% libraries/SITL/SIM_last_letter.o
+%% libraries/SITL/SIM_Motor.o
+%% libraries/SITL/SIM_Multicopter.o
+%% libraries/SITL/SIM_SingleCopter.o
+%% libraries/SITL/SIM_Tracker.o
+%% libraries/SITL/SIM_Calibration.o
+%% libraries/SITL/SIM_Rover.o
+%% libraries/SITL/SIM_Balloon.o
+%% libraries/SITL/SITL.o
+%% libraries/SITL/SIM_Aircraft.o
+%% libraries/SITL/SIM_JSBSim.o
+%% libraries/SITL/SIM_Gimbal.o
+%% libraries/SITL/SIM_Plane.o
+%% libraries/SITL/SIM_CRRCSim.o
+%% libraries/SITL/SIM_FlightAxis.o
+%% libraries/SITL/SIM_ICEngine.o
+%% libraries/SITL/SIM_Gazebo.o
+%% libraries/SITL/SIM_Frame.o
+%% libraries/SITL/SIM_QuadPlane.o
+%% libraries/AP_HAL/utility/Socket.o
+%% libraries/AP_HAL/utility/utoa_invert.o
+%% libraries/AP_HAL/utility/Print.o
+%% libraries/AP_HAL/utility/dsm.o
+%% libraries/AP_HAL/utility/print_vprintf.o
+%% libraries/AP_HAL/utility/RingBuffer.o
+%% libraries/AP_HAL/utility/getopt_cpp.o
+%% libraries/AP_HAL/utility/ftoa_engine.o
+Building /tmp/APMrover2.build/APMrover2.elf
+%% APMrover2.elf
+Firmware is in APMrover2.elf
+make[1]: Leaving directory '/home/juvinski/Projetos/AgroRaptor/ardupilot/APMrover2'
+/usr/bin/make -C AntennaTracker sitl
+make[1]: Entering directory '/home/juvinski/Projetos/AgroRaptor/ardupilot/AntennaTracker'
+Checking modules
+// BUILDROOT=/tmp/AntennaTracker.build HAL_BOARD=HAL_BOARD_SITL HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE TOOLCHAIN=NATIVE EXTRAFLAGS=-DGIT_VERSION="22b5c415" -I/home/juvinski/Projetos/AgroRaptor/ardupilot/libraries/AP_Common/missing -DMAVLINK_PROTOCOL_VERSION=2 -DHAVE_CMATH_ISFINITE -DNEED_CMATH_ISFINITE_STD_NAMESPACE -DHAVE_ENDIAN_H -DHAVE_BYTESWAP_H
+echo "Generating MAVLink headers..."
+Generating MAVLink headers...
+#goto mavlink module directory and run the most recent generator script
+echo "Generating C code using mavgen.py located at" /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/
+Generating C code using mavgen.py located at /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/
+PYTHONPATH=/home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/ python /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink//pymavlink/tools/mavgen.py --lang=C --wire-protocol=2.0 --output=/tmp/AntennaTracker.build/libraries/GCS_MAVLink/include/mavlink/v2.0 /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/ardupilotmega.xml
+Validating /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/ardupilotmega.xml
+Parsing /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/ardupilotmega.xml
+Note: message DATA64 is longer than 64 bytes long (74 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message DATA96 is longer than 64 bytes long (106 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message REMOTE_LOG_DATA_BLOCK is longer than 64 bytes long (214 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Validating /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/common.xml
+Parsing /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/common.xml
+Note: message GPS_STATUS is longer than 64 bytes long (109 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message ATTITUDE_QUATERNION_COV is longer than 64 bytes long (76 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message GLOBAL_POSITION_INT_COV is longer than 64 bytes long (193 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message LOCAL_POSITION_NED_COV is longer than 64 bytes long (237 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message HIGHRES_IMU is longer than 64 bytes long (70 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message HIL_SENSOR is longer than 64 bytes long (72 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message SIM_STATE is longer than 64 bytes long (92 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message FILE_TRANSFER_PROTOCOL is longer than 64 bytes long (262 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message HIL_STATE_QUATERNION is longer than 64 bytes long (72 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message LOG_DATA is longer than 64 bytes long (105 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message GPS_INJECT_DATA is longer than 64 bytes long (121 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message SERIAL_CONTROL is longer than 64 bytes long (87 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message ENCAPSULATED_DATA is longer than 64 bytes long (263 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message RESOURCE_REQUEST is longer than 64 bytes long (251 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message FOLLOW_TARGET is longer than 64 bytes long (101 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message CONTROL_SYSTEM_STATE is longer than 64 bytes long (108 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message AUTOPILOT_VERSION is longer than 64 bytes long (68 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message GPS_INPUT is longer than 64 bytes long (71 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message GPS_RTCM_DATA is longer than 64 bytes long (190 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Note: message V2_EXTENSION is longer than 64 bytes long (262 bytes), which can cause fragmentation since many radio modems use 64 bytes as maximum air transfer unit.
+Validating /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/uAvionix.xml
+Parsing /home/juvinski/Projetos/AgroRaptor/ardupilot/modules/mavlink/message_definitions/v1.0/uAvionix.xml
+Merged enum MAV_CMD
+Found 189 MAVLink message types in 3 XML files
+Generating C implementation in directory /tmp/AntennaTracker.build/libraries/GCS_MAVLink/include/mavlink/v2.0/ardupilotmega
+Generating C implementation in directory /tmp/AntennaTracker.build/libraries/GCS_MAVLink/include/mavlink/v2.0/common
+Generating C implementation in directory /tmp/AntennaTracker.build/libraries/GCS_MAVLink/include/mavlink/v2.0/uAvionix
+Copying fixed headers for protocol 2.0 to /tmp/AntennaTracker.build/libraries/GCS_MAVLink/include/mavlink/v2.0
+%% tracking.o
+%% control_manual.o
+%% control_scan.o
+%% Parameters.o
+%% GCS_Mavlink.o
+%% Log.o
+%% AntennaTracker.o
+%% system.o
+%% radio.o
+%% servos.o
+%% sensors.o
+%% control_servo_test.o
+%% capabilities.o
+%% control_auto.o
+%% libraries/AP_Common/AP_Common.o
+%% libraries/AP_Common/c++.o
+%% libraries/AP_Common/Location.o
+%% libraries/AP_Param/AP_Param.o
+%% libraries/StorageManager/StorageManager.o
+%% libraries/AP_GPS/AP_GPS_SBF.o
+%% libraries/AP_GPS/AP_GPS_ERB.o
+%% libraries/AP_GPS/AP_GPS_UBLOX.o
+%% libraries/AP_GPS/AP_GPS_NMEA.o
+%% libraries/AP_GPS/AP_GPS_SIRF.o
+%% libraries/AP_GPS/AP_GPS_SBP.o
+%% libraries/AP_GPS/AP_GPS.o
+%% libraries/AP_GPS/AP_GPS_GSOF.o
+%% libraries/AP_GPS/AP_GPS_MTK19.o
+%% libraries/AP_GPS/AP_GPS_MAV.o
+%% libraries/AP_GPS/GPS_Backend.o
+%% libraries/AP_GPS/AP_GPS_QURT.o
+%% libraries/AP_GPS/AP_GPS_MTK.o
+%% libraries/AP_GPS/AP_GPS_PX4.o
+%% libraries/AP_Baro/AP_Baro.o
+%% libraries/AP_Baro/AP_Baro_qflight.o
+%% libraries/AP_Baro/AP_Baro_HIL.o
+%% libraries/AP_Baro/AP_Baro_PX4.o
+%% libraries/AP_Baro/AP_Baro_MS5611.o
+%% libraries/AP_Baro/AP_Baro_QURT.o
+%% libraries/AP_Baro/AP_Baro_Backend.o
+%% libraries/AP_Baro/AP_Baro_BMP085.o
+%% libraries/AP_Compass/AP_Compass_Calibration.o
+%% libraries/AP_Compass/Compass_learn.o
+%% libraries/AP_Compass/AP_Compass_HIL.o
+%% libraries/AP_Compass/AP_Compass_qflight.o
+%% libraries/AP_Compass/AP_Compass.o
+%% libraries/AP_Compass/AP_Compass_BMM150.o
+%% libraries/AP_Compass/AP_Compass_HMC5843.o
+%% libraries/AP_Compass/AP_Compass_PX4.o
+%% libraries/AP_Compass/AP_Compass_QURT.o
+%% libraries/AP_Compass/AP_Compass_Backend.o
+%% libraries/AP_Compass/CompassCalibrator.o
+%% libraries/AP_Compass/AP_Compass_LSM9DS1.o
+%% libraries/AP_Compass/AP_Compass_AK8963.o
+%% libraries/AP_Compass/AP_Compass_LSM303D.o
+%% libraries/AP_Math/quaternion.o
+%% libraries/AP_Math/AP_GeodesicGrid.o
+%% libraries/AP_Math/vector2.o
+%% libraries/AP_Math/polygon.o
+%% libraries/AP_Math/matrix3.o
+%% libraries/AP_Math/matrix_alg.o
+%% libraries/AP_Math/edc.o
+%% libraries/AP_Math/AP_Math.o
+%% libraries/AP_Math/vector3.o
+%% libraries/AP_Math/location.o
+%% libraries/AP_ADC/AP_ADC.o
+%% libraries/AP_ADC/AP_ADC_ADS1115.o
+%% libraries/AP_AccelCal/AccelCalibrator.o
+%% libraries/AP_AccelCal/AP_AccelCal.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_SITL.o
+%% libraries/AP_InertialSensor/AuxiliaryBus.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_Backend.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_HIL.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_MPU9250.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_MPU6000.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_Stream.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_BMI160.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_L3G4200D.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_QURT.o
+%% libraries/AP_InertialSensor/AP_InertialSensor.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_qflight.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_MAVLink.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_LSM9DS0.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_PX4.o
+%% libraries/AP_AHRS/AP_AHRS_DCM.o
+%% libraries/AP_AHRS/AP_AHRS.o
+%% libraries/AP_AHRS/AP_AHRS_NavEKF.o
+%% libraries/Filter/LowPassFilter.o
+%% libraries/Filter/LowPassFilter2p.o
+%% libraries/Filter/DerivativeFilter.o
+%% libraries/GCS_MAVLink/GCS_Common.o
+%% libraries/GCS_MAVLink/GCS_Signing.o
+%% libraries/GCS_MAVLink/GCS_serial_control.o
+%% libraries/GCS_MAVLink/GCS_Logs.o
+%% libraries/GCS_MAVLink/MAVLink_routing.o
+%% libraries/GCS_MAVLink/GCS_MAVLink.o
+%% libraries/AP_SerialManager/AP_SerialManager.o
+%% libraries/AP_Declination/AP_Declination.o
+%% libraries/DataFlash/LogFile.o
+%% libraries/DataFlash/DataFlash_SITL.o
+%% libraries/DataFlash/DFMessageWriter.o
+%% libraries/DataFlash/DataFlash.o
+%% libraries/DataFlash/DataFlash_Block.o
+%% libraries/DataFlash/DataFlash_MAVLink.o
+%% libraries/DataFlash/DataFlash_Backend.o
+%% libraries/DataFlash/DataFlash_File.o
+%% libraries/AC_PID/AC_HELI_PID.o
+%% libraries/AC_PID/AC_PI_2D.o
+%% libraries/AC_PID/AC_PID.o
+%% libraries/AC_PID/AC_P.o
+%% libraries/AP_Scheduler/AP_Scheduler.o
+%% libraries/AP_NavEKF/AP_NavEKF.o
+%% libraries/AP_NavEKF/AP_NavEKF_core.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_Outputs.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_Measurements.o
+%% libraries/AP_NavEKF2/AP_NavEKF2.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_OptFlowFusion.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_core.o
+%% libraries/AP_NavEKF2/AP_NavEKF_GyroBias.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_MagFusion.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_VehicleStatus.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_PosVelFusion.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_AirDataFusion.o
+%% libraries/AP_NavEKF2/AP_NavEKF2_Control.o
+%% libraries/AP_Mission/AP_Mission.o
+%% libraries/AP_Terrain/TerrainIO.o
+%% libraries/AP_Terrain/TerrainMission.o
+%% libraries/AP_Terrain/TerrainGCS.o
+%% libraries/AP_Terrain/AP_Terrain.o
+%% libraries/AP_Terrain/TerrainUtil.o
+%% libraries/AP_Rally/AP_Rally.o
+%% libraries/AP_Notify/Display_SSD1306_I2C.o
+%% libraries/AP_Notify/ToneAlarm_PX4.o
+%% libraries/AP_Notify/ExternalLED.o
+%% libraries/AP_Notify/ToneAlarm_PX4_Solo.o
+%% libraries/AP_Notify/NavioLED_I2C.o
+%% libraries/AP_Notify/ToshibaLED.o
+%% libraries/AP_Notify/NavioLED.o
+%% libraries/AP_Notify/OreoLED_PX4.o
+%% libraries/AP_Notify/Buzzer.o
+%% libraries/AP_Notify/Display.o
+%% libraries/AP_Notify/AP_BoardLED.o
+%% libraries/AP_Notify/ToshibaLED_PX4.o
+%% libraries/AP_Notify/VRBoard_LED.o
+%% libraries/AP_Notify/DiscreteRGBLed.o
+%% libraries/AP_Notify/AP_Notify.o
+%% libraries/AP_Notify/RGBLed.o
+%% libraries/AP_Notify/ToshibaLED_I2C.o
+%% libraries/AP_Notify/RCOutputRGBLed.o
+%% libraries/AP_Notify/ToneAlarm_Linux.o
+%% libraries/AP_BattMonitor/AP_BattMonitor_Backend.o
+%% libraries/AP_BattMonitor/AP_BattMonitor_Bebop.o
+%% libraries/AP_BattMonitor/AP_BattMonitor_SMBus_I2C.o
+%% libraries/AP_BattMonitor/AP_BattMonitor_Analog.o
+%% libraries/AP_BattMonitor/AP_BattMonitor.o
+%% libraries/AP_BattMonitor/AP_BattMonitor_SMBus_PX4.o
+%% libraries/AP_Airspeed/AP_Airspeed_I2C.o
+%% libraries/AP_Airspeed/Airspeed_Calibration.o
+%% libraries/AP_Airspeed/AP_Airspeed_analog.o
+%% libraries/AP_Airspeed/AP_Airspeed.o
+%% libraries/AP_Airspeed/AP_Airspeed_PX4.o
+%% libraries/RC_Channel/RC_Channel.o
+%% libraries/RC_Channel/RC_Channel_aux.o
+%% libraries/AP_BoardConfig/px4_drivers.o
+%% libraries/AP_BoardConfig/AP_BoardConfig.o
+%% libraries/AP_OpticalFlow/AP_OpticalFlow_HIL.o
+%% libraries/AP_OpticalFlow/AP_OpticalFlow_Linux.o
+%% libraries/AP_OpticalFlow/AP_OpticalFlow_PX4.o
+%% libraries/AP_OpticalFlow/OpticalFlow_backend.o
+%% libraries/AP_OpticalFlow/OpticalFlow.o
+%% libraries/AP_OpticalFlow/AP_OpticalFlow_Onboard.o
+%% libraries/AP_RangeFinder/RangeFinder.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_Bebop.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_PX4_PWM.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_LightWareI2C.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_PulsedLightLRF.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_analog.o
+%% libraries/AP_RangeFinder/RangeFinder_Backend.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarI2CXL.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_BBB_PRU.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_LightWareSerial.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_PX4.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_MAVLink.o
+%% libraries/AP_Mount/AP_Mount_Backend.o
+%% libraries/AP_Mount/SoloGimbalEKF.o
+%% libraries/AP_Mount/AP_Mount_Alexmos.o
+%% libraries/AP_Mount/AP_Mount_SToRM32.o
+%% libraries/AP_Mount/AP_Mount.o
+%% libraries/AP_Mount/SoloGimbal.o
+%% libraries/AP_Mount/SoloGimbal_Parameters.o
+%% libraries/AP_Mount/AP_Mount_SoloGimbal.o
+%% libraries/AP_Mount/AP_Mount_Servo.o
+%% libraries/AP_Mount/AP_Mount_SToRM32_serial.o
+%% libraries/AP_RSSI/AP_RSSI.o
+%% libraries/AP_RPM/RPM_Backend.o
+%% libraries/AP_RPM/RPM_PX4_PWM.o
+%% libraries/AP_RPM/AP_RPM.o
+%% libraries/AP_RPM/RPM_SITL.o
+%% libraries/AP_Module/AP_Module.o
+%% libraries/AP_Button/AP_Button.o
+%% libraries/AP_ICEngine/AP_ICEngine.o
+%% libraries/AP_HAL/UARTDriver.o
+%% libraries/AP_HAL/HAL.o
+%% libraries/AP_HAL/Util.o
+%% libraries/AP_HAL_Empty/GPIO.o
+%% libraries/AP_HAL_Empty/Semaphores.o
+%% libraries/AP_HAL_Empty/UARTDriver.o
+%% libraries/AP_HAL_Empty/Storage.o
+%% libraries/AP_HAL_Empty/PrivateMember.o
+%% libraries/AP_HAL_Empty/RCOutput.o
+%% libraries/AP_HAL_Empty/Scheduler.o
+%% libraries/AP_HAL_Empty/AnalogIn.o
+%% libraries/AP_HAL_Empty/RCInput.o
+%% libraries/AP_HAL_Empty/HAL_Empty_Class.o
+%% libraries/AP_HAL_SITL/GPIO.o
+%% libraries/AP_HAL_SITL/SITL_State.o
+%% libraries/AP_HAL_SITL/Semaphores.o
+%% libraries/AP_HAL_SITL/UARTDriver.o
+%% libraries/AP_HAL_SITL/Storage.o
+%% libraries/AP_HAL_SITL/SITL_cmdline.o
+%% libraries/AP_HAL_SITL/HAL_SITL_Class.o
+%% libraries/AP_HAL_SITL/RCOutput.o
+%% libraries/AP_HAL_SITL/sitl_ins.o
+%% libraries/AP_HAL_SITL/Scheduler.o
+%% libraries/AP_HAL_SITL/system.o
+%% libraries/AP_HAL_SITL/sitl_gps.o
+%% libraries/AP_HAL_SITL/sitl_compass.o
+%% libraries/AP_HAL_SITL/AnalogIn.o
+%% libraries/AP_HAL_SITL/sitl_barometer.o
+%% libraries/AP_HAL_SITL/RCInput.o
+%% libraries/AP_HAL_SITL/sitl_optical_flow.o
+%% libraries/SITL/SIM_Helicopter.o
+%% libraries/SITL/SIM_ADSB.o
+%% libraries/SITL/SIM_XPlane.o
+%% libraries/SITL/SIM_last_letter.o
+%% libraries/SITL/SIM_Motor.o
+%% libraries/SITL/SIM_Multicopter.o
+%% libraries/SITL/SIM_SingleCopter.o
+%% libraries/SITL/SIM_Tracker.o
+%% libraries/SITL/SIM_Calibration.o
+%% libraries/SITL/SIM_Rover.o
+%% libraries/SITL/SIM_Balloon.o
+%% libraries/SITL/SITL.o
+%% libraries/SITL/SIM_Aircraft.o
+%% libraries/SITL/SIM_JSBSim.o
+%% libraries/SITL/SIM_Gimbal.o
+%% libraries/SITL/SIM_Plane.o
+%% libraries/SITL/SIM_CRRCSim.o
+%% libraries/SITL/SIM_FlightAxis.o
+%% libraries/SITL/SIM_ICEngine.o
+%% libraries/SITL/SIM_Gazebo.o
+%% libraries/SITL/SIM_Frame.o
+%% libraries/SITL/SIM_QuadPlane.o
+%% libraries/AP_HAL/utility/Socket.o
+%% libraries/AP_HAL/utility/utoa_invert.o
+%% libraries/AP_HAL/utility/Print.o
+%% libraries/AP_HAL/utility/dsm.o
+%% libraries/AP_HAL/utility/print_vprintf.o
+%% libraries/AP_HAL/utility/RingBuffer.o
+%% libraries/AP_HAL/utility/getopt_cpp.o
+%% libraries/AP_HAL/utility/ftoa_engine.o
+Building /tmp/AntennaTracker.build/AntennaTracker.elf
+%% AntennaTracker.elf
+Firmware is in AntennaTracker.elf
+make[1]: Leaving directory '/home/juvinski/Projetos/AgroRaptor/ardupilot/AntennaTracker'

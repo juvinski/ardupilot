@@ -1905,3 +1905,40 @@ void DataFlash_Class::Log_Write_Rally(const AP_Rally &rally)
         }
     }
 }
+
+void DataFlash_Class::Log_Humidity(const AP_AHRS& ahrs, const AP_GPS& gps, const Location& current_loc, AP_HumidityTemperature& current_humidity_temperature) 
+{
+    int32_t altitude, altitude_rel, altitude_gps;
+    float l_temperature, l_humidity;
+    
+    if (current_loc.flags.relative_alt) {
+        altitude = current_loc.alt+ahrs.get_home().alt;
+        altitude_rel = current_loc.alt;
+    } else {
+        altitude = current_loc.alt;
+        altitude_rel = current_loc.alt - ahrs.get_home().alt;
+    }
+    if (gps.status() >= AP_GPS::GPS_OK_FIX_3D) {
+        altitude_gps = gps.location().alt;
+    } else {
+        altitude_gps = 0;
+    }
+    
+    l_temperature = current_humidity_temperature.getTemperature();
+    l_humidity = current_humidity_temperature.getHumidity();
+
+    struct log_Humidity pkt = {
+        LOG_PACKET_HEADER_INIT(LOG_HUM_MSG),
+        time_us     : AP_HAL::micros64(),
+        gps_time    : gps.time_week_ms(),
+        gps_week    : gps.time_week(),
+        latitude    : current_loc.lat,
+        longitude   : current_loc.lng,
+        altitude    : altitude,
+        altitude_rel: altitude_rel,
+        altitude_gps: altitude_gps,
+        humidity    : l_humidity,
+        temperature : l_temperature
+        };
+    WriteCriticalBlock(&pkt, sizeof(pkt));
+}

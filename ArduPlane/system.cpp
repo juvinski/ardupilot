@@ -258,7 +258,7 @@ void Plane::init_ardupilot()
         optflow.init();
     }
 #endif
-
+    humidity_sensor.init();
 }
 
 //********************************************************************************

@@ -84,6 +84,7 @@ const AP_Scheduler::Task Plane::scheduler_tasks[] = {
     SCHED_TASK(dataflash_periodic,     50,    400),
     SCHED_TASK(avoidance_adsb_update,  10,    100),
     SCHED_TASK(button_update,           5,    100),
+    SCHED_TASK(read_temperature,        0.5,    500)
 };
 
 void Plane::setup() 
@@ -125,7 +126,7 @@ void Plane::loop()
         perf.G_Dt_max = perf.delta_us_fast_loop;
     }
 
-    if (perf.delta_us_fast_loop < perf.G_Dt_min || perf.G_Dt_min == 0) {
+    if (perf.delta_us_fast_loop < perf.G_Dt_min || perf.G_Dt_min == 0){
         perf.G_Dt_min = perf.delta_us_fast_loop;
     }
     perf.fast_loopTimer_us = timer;
@@ -209,8 +210,10 @@ void Plane::update_trigger(void)
     camera.trigger_pic_cleanup();
     if (camera.check_trigger_pin()) {
         gcs_send_message(MSG_CAMERA_FEEDBACK);
-        if (should_log(MASK_LOG_CAMERA)) {
+        if (should_log(MASK_LOG_CAMERA)) 
+        {
             DataFlash.Log_Write_Camera(ahrs, gps, current_loc);
+            DataFlash.Log_Humidity(ahrs, gps, current_loc,humidity_sensor);
         }
     }    
 #endif

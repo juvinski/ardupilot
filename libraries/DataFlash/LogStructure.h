@@ -713,6 +713,20 @@ struct PACKED log_Rally {
     int16_t altitude;
 };
 
+struct PACKED log_Humidity {
+    LOG_PACKET_HEADER;
+    uint64_t time_us;
+    uint32_t gps_time;
+    uint16_t gps_week;
+    int32_t  latitude;
+    int32_t  longitude;
+    int32_t  altitude;
+    int32_t  altitude_rel;
+    int32_t  altitude_gps;
+    float    humidity;
+    float    temperature;
+};
+
 // #endif // SBP_HW_LOGGING
 
 /*
@@ -788,8 +802,9 @@ Format characters in the format string for binary log messages
       "MODE", "QMBB",         "TimeUS,Mode,ModeNum,Rsn" }, \
     { LOG_RFND_MSG, sizeof(log_RFND), \
       "RFND", "QCC",         "TimeUS,Dist1,Dist2" }, \
-    { LOG_DF_MAV_STATS, sizeof(log_DF_MAV_Stats), \
-      "DMS", "IIIIIBBBBBBBBBB",         "TimeMS,N,Dp,RT,RS,Er,Fa,Fmn,Fmx,Pa,Pmn,Pmx,Sa,Smn,Smx" }
+    { LOG_HUM_MSG, sizeof(log_Humidity), \
+      "HUM", "QIHLLeeeff",   "TimeUS,GPSTime,GPSWeek,Lat,Lng,Alt,RelAlt,GPSAlt,Humid,Temper" }
+      
 
 // messages for more advanced boards
 #define LOG_EXTRA_STRUCTURES \
@@ -983,7 +998,7 @@ enum LogMessages {
     LOG_GPS_RAW_MSG,
     LOG_GPS_RAWH_MSG,
     LOG_GPS_RAWS_MSG,
-	LOG_GPS_SBF_EVENT_MSG,
+    LOG_GPS_SBF_EVENT_MSG,
     LOG_ACC1_MSG,
     LOG_ACC2_MSG,
     LOG_ACC3_MSG,
@@ -1032,6 +1047,7 @@ enum LogMessages {
     LOG_GIMBAL3_MSG,
     LOG_RATE_MSG,
     LOG_RALLY_MSG,
+    LOG_HUM_MSG
 };
 
 enum LogOriginType {

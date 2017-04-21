@@ -62,7 +62,7 @@ bool NavioLED_I2C::hw_set_rgb(uint8_t red, uint8_t green, uint8_t blue)
 
     uint8_t red_channel_lsb = red_adjusted & 0xFF;
     uint8_t red_channel_msb = red_adjusted >> 8;
-
+    
 
     uint8_t transaction[] = {PCA9685_PWM, 0x00, 0x00, blue_channel_lsb, blue_channel_msb,
 			     0x00, 0x00, green_channel_lsb, green_channel_msb,
