@@ -41,7 +41,7 @@ void AP_HumidityTemperature_HTU21D::init()
     _temperature = 0.0f;
     _dev = std::move(hal.i2c_mgr->get_device(HTU21D_I2C_BUS, HTU21D_I2C_ADDR)); 
     // take i2c bus sempahore
-    if (!_dev || !_dev->get_semaphore()->take(1)) 
+    if (!_dev || !_dev->get_semaphore()->take(HAL_SEMAPHORE_BLOCK_FOREVER)) 
     {
         _dev_alive = false;
     }
@@ -110,7 +110,7 @@ void AP_HumidityTemperature_HTU21D::readTemperature()
     
     if(_type)
     {
-        if (!_dev || !_dev->get_semaphore()->take(1)) 
+        if (!_dev || !_dev->get_semaphore()->take(HAL_SEMAPHORE_BLOCK_FOREVER)) 
         {
             hal.console->println("HTU21D Temperature: Unable to get semaphore!");
             _temperature = 0.0f;
@@ -121,9 +121,15 @@ void AP_HumidityTemperature_HTU21D::readTemperature()
             hal.console->println("HTU21D Temperature: Bad write!");
         }
         _type = false;
+        _dev->get_semaphore()->give();
     }
     else
     {
+        if (!_dev || !_dev->get_semaphore()->take(HAL_SEMAPHORE_BLOCK_FOREVER)) 
+        {
+            hal.console->println("HTU21D Temperature: Unable to get semaphore!");
+            _temperature = 0.0f;
+        }        
         if(!_dev->read(rawTemperature,sizeof(rawTemperature)))
         {
             hal.console->println("HTU21D Temperature: Bad read!");
@@ -147,7 +153,7 @@ void AP_HumidityTemperature_HTU21D::readTemperature()
                 }
                 else
                 {
-                    _temperature = ((tempRead / 65536.0) * 175.72) - 46.85;
+                    _temperature = (175.72 * (tempRead / 65536.0)) - 46.85;
                 }
             }
         }
@@ -176,9 +182,14 @@ void AP_HumidityTemperature_HTU21D::readHumidity()
             hal.console->println("HTU21D Humidity: Bad write!");
         }
         _type=false;
+        _dev->get_semaphore()->give();
     }
     else
     {
+        if (!_dev || !_dev->get_semaphore()->take(HAL_SEMAPHORE_BLOCK_FOREVER)) 
+        {
+            AP_HAL::panic("HTU21D Humidity: Unable to get semaphore!");
+        }
         if(!_dev->read(rawHumidity,sizeof(rawHumidity)))
         {
             hal.console->println("HTU21D Humidity: Bad read!");
@@ -202,7 +213,8 @@ void AP_HumidityTemperature_HTU21D::readHumidity()
                 }
                 else
                 {
-                    _humidity = ((humRead / 65536.0) * 125.0) - 6.0;
+                    _humidity = ( 125.0 * (humRead / 65536.0)) - 6.0;
+                    
                 }
             }
         }
@@ -214,7 +226,6 @@ void AP_HumidityTemperature_HTU21D::readHumidity()
         //GCS_MAVLINK::send_statustext_all(MAV_SEVERITY_CRITICAL, "H: %.2f %% - T: %.2f", _humidity, _temperature);
     }
 }
-
 
 float AP_HumidityTemperature_HTU21D::getHumidity() 
 {
