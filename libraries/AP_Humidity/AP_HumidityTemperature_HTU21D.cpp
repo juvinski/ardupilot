@@ -110,50 +110,56 @@ void AP_HumidityTemperature_HTU21D::readTemperature()
     
     if(_type)
     {
-        if (!_dev || !_dev->get_semaphore()->take(HAL_SEMAPHORE_BLOCK_FOREVER)) 
+        if (!_dev || !_dev->get_semaphore()->take(1)) 
         {
             hal.console->println("HTU21D Temperature: Unable to get semaphore!");
             _temperature = 0.0f;
         }
-        uint8_t arrRead[] = {HTU21DF_I2C_READTEMP_NOHOLD}; 
-        if(!_dev->transfer(arrRead,sizeof(arrRead),nullptr,0))
+        else
         {
-            hal.console->println("HTU21D Temperature: Bad write!");
+            uint8_t arrRead[] = {HTU21DF_I2C_READTEMP_NOHOLD}; 
+            if(!_dev->transfer(arrRead,sizeof(arrRead),nullptr,0))
+            {
+                hal.console->println("HTU21D Temperature: Bad write!");
+            }
         }
         _type = false;
         _dev->get_semaphore()->give();
     }
     else
     {
-        if (!_dev || !_dev->get_semaphore()->take(HAL_SEMAPHORE_BLOCK_FOREVER)) 
+        if (!_dev || !_dev->get_semaphore()->take(1)) 
         {
             hal.console->println("HTU21D Temperature: Unable to get semaphore!");
             _temperature = 0.0f;
-        }        
-        if(!_dev->read(rawTemperature,sizeof(rawTemperature)))
-        {
-            hal.console->println("HTU21D Temperature: Bad read!");
         }
         else
         {
-            if (crc_check(rawTemperature, 3) != 0) 
+            if(!_dev->read(rawTemperature,sizeof(rawTemperature)))
             {
-                hal.console->println("HTU21D Temperature: I2C Bad CRC!");
+                hal.console->println("HTU21D Temperature: Bad read!");
             }
             else
             {
-                tempRead = ((rawTemperature[0] << 8) | rawTemperature[1]) & 0xFFFC;
-                if(tempRead == ERROR_I2C_TIMEOUT)
+                if (crc_check(rawTemperature, 3) != 0) 
                 {
-                    hal.console->println("HTU21D Temperature: I2C Timeout!");
-                }
-                else if (tempRead == ERROR_BAD_CRC)
-                {
-                    hal.console->println("HTU21D Temperature: BAD CRC!");
+                    hal.console->println("HTU21D Temperature: I2C Bad CRC!");
                 }
                 else
                 {
-                    _temperature = (175.72 * (tempRead / 65536.0)) - 46.85;
+                    tempRead = ((rawTemperature[0] << 8) | rawTemperature[1]) & 0xFFFC;
+                    if(tempRead == ERROR_I2C_TIMEOUT)
+                    {
+                        hal.console->println("HTU21D Temperature: I2C Timeout!");
+                    }
+                    else if (tempRead == ERROR_BAD_CRC)
+                    {
+                        hal.console->println("HTU21D Temperature: BAD CRC!");
+                    }
+                    else
+                    {
+                        _temperature = (175.72 * (tempRead / 65536.0)) - 46.85;
+                    }
                 }
             }
         }
@@ -172,49 +178,55 @@ void AP_HumidityTemperature_HTU21D::readHumidity()
 
     if(_type)
     {
-        if (!_dev || !_dev->get_semaphore()->take(HAL_SEMAPHORE_BLOCK_FOREVER)) 
+        if (!_dev || !_dev->get_semaphore()->take(1)) 
         {
             AP_HAL::panic("HTU21D Humidity: Unable to get semaphore!");
         }
-        uint8_t arrRead[] = {HTU21DF_I2C_READHUM_NOHOLD}; 
-        if(!_dev->transfer(arrRead,sizeof(arrRead),nullptr,0))
+        else
         {
-            hal.console->println("HTU21D Humidity: Bad write!");
+            uint8_t arrRead[] = {HTU21DF_I2C_READHUM_NOHOLD}; 
+            if(!_dev->transfer(arrRead,sizeof(arrRead),nullptr,0))
+            {
+                hal.console->println("HTU21D Humidity: Bad write!");
+            }    
         }
         _type=false;
         _dev->get_semaphore()->give();
     }
     else
     {
-        if (!_dev || !_dev->get_semaphore()->take(HAL_SEMAPHORE_BLOCK_FOREVER)) 
+        if (!_dev || !_dev->get_semaphore()->take(1)) 
         {
             AP_HAL::panic("HTU21D Humidity: Unable to get semaphore!");
         }
-        if(!_dev->read(rawHumidity,sizeof(rawHumidity)))
-        {
-            hal.console->println("HTU21D Humidity: Bad read!");
-        }
         else
         {
-            if (crc_check(rawHumidity, 3) != 0) 
+            if(!_dev->read(rawHumidity,sizeof(rawHumidity)))
             {
-                hal.console->println("HTU21D Humidity: I2C Bad CRC!");
+                hal.console->println("HTU21D Humidity: Bad read!");
             }
             else
             {
-                humRead = ((rawHumidity[0] << 8) | rawHumidity[1]) & 0xFFFC;
-                if(humRead == ERROR_I2C_TIMEOUT)
+                if (crc_check(rawHumidity, 3) != 0) 
                 {
-                    hal.console->println("HTU21D Humidity: I2C Timeout!");
-                }
-                else if (humRead == ERROR_BAD_CRC)
-                {
-                    hal.console->println("HTU21D Humidity: BAD CRC!");
+                    hal.console->println("HTU21D Humidity: I2C Bad CRC!");
                 }
                 else
                 {
-                    _humidity = ( 125.0 * (humRead / 65536.0)) - 6.0;
-                    
+                    humRead = ((rawHumidity[0] << 8) | rawHumidity[1]) & 0xFFFC;
+                    if(humRead == ERROR_I2C_TIMEOUT)
+                    {
+                        hal.console->println("HTU21D Humidity: I2C Timeout!");
+                    }
+                    else if (humRead == ERROR_BAD_CRC)
+                    {
+                        hal.console->println("HTU21D Humidity: BAD CRC!");
+                    }
+                    else
+                    {
+                        _humidity = ( 125.0 * (humRead / 65536.0)) - 6.0;
+
+                    }
                 }
             }
         }

@@ -96,7 +96,7 @@ void Plane::setup()
 
     AP_Notify::flags.failsafe_battery = false;
 
-    notify.init(false);
+    notify.init(true);
 
     rssi.init();
 
