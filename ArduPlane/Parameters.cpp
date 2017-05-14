@@ -575,7 +575,7 @@ const AP_Param::Info Plane::var_info[] = {
     // @Param: THR_SUPP_MAN
     // @DisplayName: Throttle suppress manual passthru
     // @Description: When throttle is suppressed in auto mode it is normally forced to zero. If you enable this option, then while suppressed it will be manual throttle. This is useful on petrol engines to hold the idle throttle manually while waiting for takeoff
-	// @Values: 0:Disabled,1:Enabled
+    // @Values: 0:Disabled,1:Enabled
     // @User: Advanced
     GSCALAR(throttle_suppress_manual,"THR_SUPP_MAN",   0),
 
@@ -1358,7 +1358,13 @@ const AP_Param::Info Plane::var_info[] = {
     // @Group: NTF_
     // @Path: ../libraries/AP_Notify/AP_Notify.cpp
     GOBJECT(notify, "NTF_",  AP_Notify),
-
+     
+      
+    // Humidity and temperature Group
+    // @Group: HUM_
+    // @Path: ../libraries/HumidityTemperature.cpp
+    GOBJECT(humidity_sensor, "HUM_", AP_HumidityTemperature),
+              
     // @Group: 
     // @Path: Parameters.cpp
     GOBJECT(g2, "",  ParametersG2),

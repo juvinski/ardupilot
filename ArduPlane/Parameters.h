@@ -345,6 +345,8 @@ public:
 
         k_param_mixing_offset,
         k_param_dspoiler_rud_rate,
+        
+        k_param_humidity_sensor = 250, //Param for Humidity and Temperatyure Sensor
 
         k_param_DataFlash = 253, // Logging Group
 
