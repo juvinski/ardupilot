@@ -213,7 +213,10 @@ void Plane::update_trigger(void)
         if (should_log(MASK_LOG_CAMERA)) 
         {
             DataFlash.Log_Write_Camera(ahrs, gps, current_loc);
-            DataFlash.Log_Humidity(ahrs, gps, current_loc,humidity_sensor);
+            if(humidity_sensor.enabled)
+            {
+                DataFlash.Log_Humidity(ahrs, gps, current_loc,humidity_sensor);
+            }
         }
     }    
 #endif
