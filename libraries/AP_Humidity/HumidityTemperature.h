@@ -21,6 +21,8 @@
 #include <AP_Math/AP_Math.h>
 #include <inttypes.h>
 #include <AP_Vehicle/AP_Vehicle.h>
+#include <AP_Vehicle/AP_Vehicle.h>
+#include <GCS_MAVLink/GCS_MAVLink.h>
 
 class AP_HumidityTemperature_Backend; 
 
@@ -41,7 +43,13 @@ public:
     float getTemperature(void);
     float getHumidity(void);
     
+    //Check if is enabled - param to avoid record empy Dataflash message 
+    bool enabled;
+    
+    static const struct AP_Param::GroupInfo var_info[];
+    
 private:
+    AP_Int8         _enable;
     AP_HumidityTemperature_Backend *driver;
     float _humidity;
     float _temperature;

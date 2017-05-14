@@ -21,10 +21,21 @@
 
 extern const AP_HAL::HAL &hal;
 
+const AP_Param::GroupInfo AP_HumidityTemperature::var_info[] = 
+{
+    // @Param: ENABLE
+    // @DisplayName: Enable or disable Humidity and Temperature sensor
+    // @Description: If you have the HTU21D connected at IC2 You can enable this to generated at Dataflash Log Temperature and Humidity
+    // @Values: 0:Disable,1:Enable
+    // @User: Advanced
+    AP_GROUPINFO("ENABLE", 0, AP_HumidityTemperature, _enable, 0),
+    
+    AP_GROUPEND
+};
+
 AP_HumidityTemperature::AP_HumidityTemperature()
 {
-    //memset(driver,0,sizeof(driver));
-    //driver = new AP_HumidityTemperature_DHT22(*this);
+    AP_Param::setup_object_defaults(this, var_info);
     driver = new AP_HumidityTemperature_HTU21D(*this);
             
 }
@@ -33,25 +44,45 @@ AP_HumidityTemperature::AP_HumidityTemperature()
  */
 void AP_HumidityTemperature::init(void)
 {
-    //driver = new AP_HumidityTemperature_DHT22(*this);
     driver->init();
 }
 
-/*
-  update RangeFinder state for all instances. This should be called at
-  around 10Hz by main loop
- */
 void AP_HumidityTemperature::read(void)
 {
-    driver->read();
+    if(!_enable)
+    {
+        //GCS_MAVLINK::send_statustext_all(MAV_SEVERITY_CRITICAL, "SEM PARADA");
+        enabled = false;
+        return;
+    }
+    else
+    {
+        //GCS_MAVLINK::send_statustext_all(MAV_SEVERITY_CRITICAL, "COM PARADA");
+        enabled = true;
+        driver->read();
+    }
 }
 
 float AP_HumidityTemperature::getHumidity(void)
 {
-    return driver->getHumidity();
+    if(!_enable)
+    {
+        return 0;
+    }
+    else
+    {
+        return driver->getHumidity();
+    }
 }
 
 float AP_HumidityTemperature::getTemperature() 
 {
-    return driver->getTemperature();
+    if(!_enable)
+    {
+        return 0;
+    }
+    else
+    {
+        return driver->getTemperature();
+    }
 }
