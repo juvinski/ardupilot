@@ -23,6 +23,10 @@ ToneAlarm::ToneAlarm()
     period_fd = open("/sys/class/pwm/pwmchip0/pwm0/period",O_WRONLY|O_CLOEXEC);
     duty_fd = open("/sys/class/pwm/pwmchip0/pwm0/duty_cycle",O_WRONLY|O_CLOEXEC);
     run_fd = open("/sys/class/pwm/pwmchip0/pwm0/enable",O_WRONLY|O_CLOEXEC);
+#elif CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_POCKET
+    period_fd = open("/sys/class/pwm/pwmchip2/pwm0/period",O_WRONLY|O_CLOEXEC);
+    duty_fd = open("/sys/class/pwm/pwmchip2/pwm0/duty_cycle",O_WRONLY|O_CLOEXEC);
+    run_fd = open("/sys/class/pwm/pwmchip2/pwm0/enable",O_WRONLY|O_CLOEXEC);
 #endif
 }
 
