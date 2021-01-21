@@ -338,7 +338,7 @@ void AP_Notify::add_backends(void)
 
   #elif CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_BBBMINI || \
         CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_POCKET
-    ADD_BACKEND(new Buzzer());
+    ADD_BACKEND(new AP_ToneAlarm());
 
   #else // other linux
     ADD_BACKEND(new AP_ToneAlarm());
