@@ -19,7 +19,8 @@ ToneAlarm::ToneAlarm()
 {
 #if CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_BLUE || \
     CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_PXF || \
-    CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_BBBMINI
+    CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_BBBMINI || \
+    CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_BBAI
     period_fd = open("/sys/class/pwm/pwmchip0/pwm0/period",O_WRONLY|O_CLOEXEC);
     duty_fd = open("/sys/class/pwm/pwmchip0/pwm0/duty_cycle",O_WRONLY|O_CLOEXEC);
     run_fd = open("/sys/class/pwm/pwmchip0/pwm0/enable",O_WRONLY|O_CLOEXEC);
@@ -31,7 +32,8 @@ bool ToneAlarm::init()
     if ((period_fd == -1) || (duty_fd == -1) || (run_fd == -1)) {
 #if CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_BLUE || \
     CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_PXF || \
-    CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_BBBMINI
+    CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_BBBMINI || \
+    CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_BBAI
         hal.console->printf("ToneAlarm: Error!! please check if PWM overlays are loaded correctly");
 #endif
         return false;
