@@ -990,6 +990,18 @@ class rst_zynq(linux):
         env.DEFINES.update(
             CONFIG_HAL_BOARD_SUBTYPE = 'HAL_BOARD_SUBTYPE_LINUX_RST_ZYNQ',
         )
+class bbai(linux):
+    toolchain = 'arm-linux-gnueabihf'
+
+    def __init__(self):
+        self.with_can = True
+
+    def configure_env(self, cfg, env):
+        super(bbai, self).configure_env(cfg, env)
+
+        env.DEFINES.update(
+            CONFIG_HAL_BOARD_SUBTYPE = 'HAL_BOARD_SUBTYPE_LINUX_BBAI',
+        )
 
 class SITL_static(sitl):
     def configure_env(self, cfg, env):
