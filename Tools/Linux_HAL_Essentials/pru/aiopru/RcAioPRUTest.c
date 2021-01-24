@@ -20,13 +20,20 @@
 //Comment/uncomment the #includes statements depending on your BeagleBone version:
 //#include "RcAioPRU_POCKET_bin.h"
 //#include "RcAioPRU_BBBMINI_bin.h"
-#include "RcAioPRU_BBBLUE_bin.h"
+//#include "RcAioPRU_BBBLUE_bin.h"
+#include "RcAioPRU_BBAI_bin.h"
+
 
 #define NUM_RING_ENTRIES 300
-#define RCOUT_PRUSS_RAM_BASE 0x4a302000
-#define RCOUT_PRUSS_CTRL_BASE 0x4a324000
-#define RCOUT_PRUSS_IRAM_BASE 0x4a338000
-#define RCIN_PRUSS_RAM_BASE   0x4a303000
+//#define RCOUT_PRUSS_RAM_BASE 0x4a302000
+//#define RCOUT_PRUSS_CTRL_BASE 0x4a324000
+//#define RCOUT_PRUSS_IRAM_BASE 0x4a338000
+//#define RCIN_PRUSS_RAM_BASE   0x4a303000
+
+#define RCOUT_PRUSS_RAM_BASE  0x4B280000
+#define RCOUT_PRUSS_CTRL_BASE 0x4B2A2000
+#define RCOUT_PRUSS_IRAM_BASE 0x4B2B4000
+#define RCIN_PRUSS_RAM_BASE 0x4B281000
 
 #define ARRAY_SIZE(_arr) (sizeof(_arr) / sizeof(_arr[0]))
 

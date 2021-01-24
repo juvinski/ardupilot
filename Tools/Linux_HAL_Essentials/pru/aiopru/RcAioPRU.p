@@ -39,7 +39,11 @@
 // IEP
 // -> 4.5.4 PRU_ICSS_IEP Registers in TRM
 #define IEP_TMR_GLB_CFG 0x0
+#ifdef BBAI
+#define IEP_TMR_CNT 0x10
+#else
 #define IEP_TMR_CNT 0xc
+#endif
 
 // ECAP
 // -> 15.3.4.1 ECAP Registers in TRM
@@ -54,7 +58,11 @@
 #define ECAP_ECEINT 0x2c
 #define ECAP_ECFLG 0x2e
 #define ECAP_ECCLR 0x30
+#ifdef BBAI
+#define ECAP_ECFRC 0x34
+#else
 #define ECAP_ECFRC 0x32
+#endif
 #define ECAP_REVID 0x5c
 
 // ECCTL1
@@ -163,6 +171,18 @@
 #define RC_CH_4_PIN r30.t5
 #define RC_CH_5_PIN r30.t2
 #define RC_CH_6_PIN r30.t6
+#endif
+
+#ifdef BBAI
+#define RC_CH_1_PIN r30.t17
+#define RC_CH_2_PIN r30.t16
+#define RC_CH_3_PIN r30.t19
+#define RC_CH_4_PIN r30.t18
+#define RC_CH_5_PIN r30.t4
+#define RC_CH_6_PIN r30.t3
+#define RC_CH_7_PIN r30.t2
+#define RC_CH_8_PIN r30.t1
+#define RC_CH_9_PIN r30.t0
 #endif
 
 // RCOut enable bits
@@ -446,6 +466,11 @@ mainloop:
    RCOUT_PWM RC_CH_10_PIN, register.ch_10_next_time, RC_CH_10_ENABLE, CH_10_PULSE_TIME_RAM_OFFSET, CH_10_T_TIME_RAM_OFFSET
    RCOUT_PWM RC_CH_11_PIN, register.ch_11_next_time, RC_CH_11_ENABLE, CH_11_PULSE_TIME_RAM_OFFSET, CH_11_T_TIME_RAM_OFFSET
    RCOUT_PWM RC_CH_12_PIN, register.ch_12_next_time, RC_CH_12_ENABLE, CH_12_PULSE_TIME_RAM_OFFSET, CH_12_T_TIME_RAM_OFFSET
+#endif
+#ifdef BBAI
+   RCOUT_PWM RC_CH_7_PIN, register.ch_7_next_time, RC_CH_7_ENABLE, CH_7_PULSE_TIME_RAM_OFFSET, CH_7_T_TIME_RAM_OFFSET
+   RCOUT_PWM RC_CH_8_PIN, register.ch_8_next_time, RC_CH_8_ENABLE, CH_8_PULSE_TIME_RAM_OFFSET, CH_8_T_TIME_RAM_OFFSET
+   RCOUT_PWM RC_CH_9_PIN, register.ch_9_next_time, RC_CH_9_ENABLE, CH_9_PULSE_TIME_RAM_OFFSET, CH_9_T_TIME_RAM_OFFSET
 #endif
    RCIN_ECAP
 #ifdef DEBUG
