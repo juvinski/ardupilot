@@ -4,10 +4,20 @@
 
 #define SYSFS_GPIO_DIR "/sys/class/gpio"
 
-#define GPIO0_BASE 0x44E07000
-#define GPIO1_BASE 0x4804C000
-#define GPIO2_BASE 0x481AC000
-#define GPIO3_BASE 0x481AE000
+//#define GPIO0_BASE 0x44E07000
+//#define GPIO1_BASE 0x4804C000
+//#define GPIO2_BASE 0x481AC000
+//#define GPIO3_BASE 0x481AE000
+
+#define GPIO1_BASE 0x4AE10000
+#define GPIO2_BASE 0x48055000
+#define GPIO3_BASE 0x48057000
+#define GPIO4_BASE 0x48059000
+#define GPIO5_BASE 0x4805B000
+#define GPIO6_BASE 0x4805D000
+#define GPIO7_BASE 0x48051000
+#define GPIO8_BASE 0x48053000
+
 
 #define GPIO_SIZE  0x00000FFF
 
@@ -16,100 +26,97 @@
 #define GPIO_IN    0x14e
 #define GPIO_OUT   0x14f
 
-#define LED_AMBER       117
-#define LED_BLUE        48
-#define LED_SAFETY      61
+#define LED_AMBER       178 // P9.9
+#define LED_BLUE        164 // P9.10
+#define LED_SAFETY      75  // P9.11
 #define SAFETY_SWITCH   116
 #define LOW             0
 #define HIGH            1
 
-#if CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_PXF || \
-    CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_ERLEBOARD || \
-    CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_BBBMINI || \
-    CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_BLUE || \
-    CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_POCKET
-#define LINUX_GPIO_NUM_BANKS 4
+#if CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_BBAI
+#define LINUX_GPIO_NUM_BANKS 8
 #else
 // disable GPIO
 #define LINUX_GPIO_NUM_BANKS 0
 #endif
 
-// BeagleBone Black GPIO mappings
-#define BBB_USR0 53
-#define BBB_USR1 54
-#define BBB_USR2 55
-#define BBB_USR3 56
-#define BBB_P8_3 38
-#define BBB_P8_4 39
-#define BBB_P8_5 34
-#define BBB_P8_6 35
-#define BBB_P8_7 66
-#define BBB_P8_8 67
-#define BBB_P8_9 69
-#define BBB_P8_10 68
-#define BBB_P8_11 45
-#define BBB_P8_12 44
-#define BBB_P8_13 23
-#define BBB_P8_14 26
-#define BBB_P8_15 47
-#define BBB_P8_16 46
-#define BBB_P8_17 27
-#define BBB_P8_18 65
-#define BBB_P8_19 22
-#define BBB_P8_20 63
-#define BBB_P8_21 62
-#define BBB_P8_22 37
-#define BBB_P8_23 36
-#define BBB_P8_24 33
-#define BBB_P8_25 32
-#define BBB_P8_26 61
-#define BBB_P8_27 86
-#define BBB_P8_28 88
-#define BBB_P8_29 87
-#define BBB_P8_30 89
-#define BBB_P8_31 10
-#define BBB_P8_32 11
-#define BBB_P8_33 9
-#define BBB_P8_34 81
-#define BBB_P8_35 8
-#define BBB_P8_36 80
-#define BBB_P8_37 78
-#define BBB_P8_38 79
-#define BBB_P8_39 76
-#define BBB_P8_40 77
-#define BBB_P8_41 74
-#define BBB_P8_42 75
-#define BBB_P8_43 72
-#define BBB_P8_44 73
-#define BBB_P8_45 70
-#define BBB_P8_46 71
-#define BBB_P9_11 30
-#define BBB_P9_12 60
-#define BBB_P9_13 31
-#define BBB_P9_14 50
-#define BBB_P9_15 48
-#define BBB_P9_16 51
-#define BBB_P9_17 5
-#define BBB_P9_18 4
-#define BBB_P9_19 13
-#define BBB_P9_20 12
-#define BBB_P9_21 3
-#define BBB_P9_22 2
-#define BBB_P9_23 49
-#define BBB_P9_24 15
-#define BBB_P9_25 117
-#define BBB_P9_26 14
-#define BBB_P9_27 115
+// BeagleBone AI GPIO mappings
+#define BBB_USR0 81 //D2 Led - Heartbeat When Linux is Running
+#define BBB_USR1 133 //D3 Led - microSD Activity
+#define BBB_USR2 79 //D4 Led - CPU Activity
+#define BBB_USR3 78 //D5 Led - eMMC Activity
+#define BBB_USR4 71 //D6 Led - WiFi/Bluetooth Activity
+#define BBB_P8_3 24
+#define BBB_P8_4 25
+#define BBB_P8_5 193
+#define BBB_P8_6 194
+#define BBB_P8_7 165
+#define BBB_P8_8 166
+#define BBB_P8_9 178
+#define BBB_P8_10 164
+#define BBB_P8_11 75
+#define BBB_P8_12 74
+#define BBB_P8_13 107
+#define BBB_P8_14 109
+#define BBB_P8_15 99
+#define BBB_P8_16 125
+#define BBB_P8_17 242
+#define BBB_P8_18 105
+#define BBB_P8_19 106
+#define BBB_P8_20 190
+#define BBB_P8_21 189
+#define BBB_P8_22 23
+#define BBB_P8_23 22
+#define BBB_P8_24 192
+#define BBB_P8_25 191
+#define BBB_P8_26 124
+#define BBB_P8_27 119
+#define BBB_P8_28 115
+#define BBB_P8_29 118
+#define BBB_P8_30 116
+#define BBB_P8_31 238
+#define BBB_P8_32 239
+#define BBB_P8_33 237
+#define BBB_P8_34 235
+#define BBB_P8_35 236
+#define BBB_P8_36 234
+#define BBB_P8_37 232
+#define BBB_P8_38 233
+#define BBB_P8_39 230
+#define BBB_P8_40 231
+#define BBB_P8_41 228
+#define BBB_P8_42 229
+#define BBB_P8_43 226
+#define BBB_P8_44 227
+#define BBB_P8_45 224
+#define BBB_P8_46 225
+#define BBB_P9_11 241
+#define BBB_P9_12 128
+#define BBB_P9_13 172
+#define BBB_P9_14 121
+#define BBB_P9_15 76
+#define BBB_P9_16 122
+#define BBB_P9_17 209
+#define BBB_P9_18 208
+#define BBB_P9_19 195
+#define BBB_P9_20 196
+#define BBB_P9_21 67
+#define BBB_P9_22 179
+#define BBB_P9_23 203
+#define BBB_P9_24 175
+#define BBB_P9_25 177
+#define BBB_P9_26 174
+#define BBB_P9_27 111
 #define BBB_P9_28 113
-#define BBB_P9_29 111
-#define BBB_P9_30 112
-#define BBB_P9_31 110
-#define BBB_P9_41 20
-#define BBB_P9_42 7
+#define BBB_P9_29 139
+#define BBB_P9_30 140
+#define BBB_P9_31 138
+#define BBB_P9_41 180
+#define BBB_P9_42 114
 
 namespace Linux {
 
-class GPIO_BBB : public AP_HAL::GPIO {
+class GPIO_BBAI : public AP_HAL::GPIO {
 private:
     struct GPIO {
         volatile uint32_t *base;
@@ -119,7 +126,7 @@ private:
      } gpio_bank[LINUX_GPIO_NUM_BANKS];
 
 public:
-    GPIO_BBB();
+    GPIO_BBAI();
     void    init() override;
     void    pinMode(uint8_t pin, uint8_t output) override;
     uint8_t read(uint8_t pin) override;

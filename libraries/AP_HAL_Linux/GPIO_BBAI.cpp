@@ -1,10 +1,6 @@
 #include <AP_HAL/AP_HAL.h>
 
-#if CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_PXF || \
-    CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_ERLEBOARD || \
-    CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_BBBMINI || \
-    CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_BLUE || \
-    CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_POCKET
+#if CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_BBAI
 
 #include "GPIO.h"
 #include <stdio.h>
@@ -19,12 +15,12 @@
 
 using namespace Linux;
 
-GPIO_BBB::GPIO_BBB()
+GPIO_BBAI::GPIO_BBAI()
 {}
 
-void GPIO_BBB::init()
+void GPIO_BBAI::init()
 {
-#if LINUX_GPIO_NUM_BANKS == 4
+#if LINUX_GPIO_NUM_BANKS == 8
     int mem_fd;
     // Enable all GPIO banks
     // Without this, access to deactivated banks (i.e. those with no clock source set up) will (logically) fail with SIGBUS
@@ -48,7 +44,7 @@ void GPIO_BBB::init()
     }
 
     /* mmap GPIO */
-    off_t offsets[LINUX_GPIO_NUM_BANKS] = { GPIO0_BASE, GPIO1_BASE, GPIO2_BASE, GPIO3_BASE };
+    off_t offsets[LINUX_GPIO_NUM_BANKS] = { GPIO1_BASE, GPIO2_BASE, GPIO3_BASE, GPIO4_BASE, GPIO5_BASE, GPIO6_BASE, GPIO7_BASE, GPIO8_BASE };
     for (uint8_t i=0; i<LINUX_GPIO_NUM_BANKS; i++) {
         gpio_bank[i].base = (volatile unsigned *)mmap(0, GPIO_SIZE, PROT_READ|PROT_WRITE, MAP_SHARED, mem_fd, offsets[i]);
         if ((char *)gpio_bank[i].base == MAP_FAILED) {
@@ -63,7 +59,7 @@ void GPIO_BBB::init()
 #endif // LINUX_GPIO_NUM_BANKS
 }
 
-void GPIO_BBB::pinMode(uint8_t pin, uint8_t output)
+void GPIO_BBAI::pinMode(uint8_t pin, uint8_t output)
 {
     uint8_t bank = pin/32;
     uint8_t bankpin = pin & 0x1F;
@@ -77,7 +73,7 @@ void GPIO_BBB::pinMode(uint8_t pin, uint8_t output)
     }
 }
 
-uint8_t GPIO_BBB::read(uint8_t pin) {
+uint8_t GPIO_BBAI::read(uint8_t pin) {
 
     uint8_t bank = pin/32;
     uint8_t bankpin = pin & 0x1F;
@@ -88,7 +84,7 @@ uint8_t GPIO_BBB::read(uint8_t pin) {
 
 }
 
-void GPIO_BBB::write(uint8_t pin, uint8_t value)
+void GPIO_BBAI::write(uint8_t pin, uint8_t value)
 {
     uint8_t bank = pin/32;
     uint8_t bankpin = pin & 0x1F;
@@ -102,23 +98,19 @@ void GPIO_BBB::write(uint8_t pin, uint8_t value)
     }
 }
 
-void GPIO_BBB::toggle(uint8_t pin)
+void GPIO_BBAI::toggle(uint8_t pin)
 {
     write(pin, !read(pin));
 }
 
 /* Alternative interface: */
-AP_HAL::DigitalSource* GPIO_BBB::channel(uint16_t n) {
+AP_HAL::DigitalSource* GPIO_BBAI::channel(uint16_t n) {
     return new DigitalSource(n);
 }
 
-bool GPIO_BBB::usb_connected(void)
+bool GPIO_BBAI::usb_connected(void)
 {
     return false;
 }
 
-#endif // CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_PXF ||
-       // CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_ERLEBOARD ||
-       // CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_BBBMINI ||
-       // CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_BLUE ||
-       // CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_POCKET
+#endif // CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_BBAI
